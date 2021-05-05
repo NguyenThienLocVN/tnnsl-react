@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios";
 import { trackPromise } from 'react-promise-tracker';
-import { Alert, AlertTitle  } from '@material-ui/lab';
-import CheckIcon from '@material-ui/icons/Check';
+import { Alert  } from '@material-ui/lab';
 
 export default class Login extends React.Component{
 	constructor(props)

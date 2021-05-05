@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'leaflet/dist/leaflet.css';
 
 import { usePromiseTracker } from "react-promise-tracker";
 import Loader from 'react-loader-spinner';
