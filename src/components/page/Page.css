@@ -1,0 +1,33 @@
+/* Home page */
+.top-bar {
+    height: 85px;
+}
+
+.bg-lightgray {
+    background-color: #fbfafa !important;
+}
+
+.btn-home-top {
+    height: 35px;
+    text-align: center;
+    width: 35px;
+    padding: 4px;
+    line-height: 35px;
+    display: list-item !important;
+}
+
+.btn-home-top:hover { background: #ffa43b; }
+.auth-bar { background: #d4edf5; }
+.btn-logout { background: #ff5722; border: 0; }
+
+.grid-item-image {
+    width: 90px;
+    height: 75px;
+}
+
+@media screen and (min-width: 768px){
+    .top-bar {
+        height: 35px;
+        line-height: 35px;
+    }
+}
