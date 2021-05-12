@@ -1,11 +1,18 @@
 /* Home page */
 .menu-home {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 169px);
     overflow-y: auto;
 }
 
+.menu-page {
+    height: calc(100vh - 35px);
+    overflow-y: auto;
+}
+
+.banner-tnmt { height: 130px; }
+
 .map-container {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 169px);
 }
 
 .top-bar {
@@ -17,17 +24,16 @@
 }
 
 .btn-home-top {
-    height: 35px;
-    text-align: center;
     width: 35px;
-    padding: 4px;
-    line-height: 35px;
-    display: list-item !important;
+    height: 35px;
 }
 
+#btn_back_page { font-size: 18px; }
+.bg-header-bar { background: #1874bd; }
+.text-header-bar { color: #1874bd; }
 .btn-home-top:hover { background: #ffa43b; }
 .auth-bar { background: #d4edf5; }
-.btn-logout { background: #ff5722; border: 0; }
+.btn-logout { border: 0; font-size: 18px; }
 
 .grid-item-image {
     width: 90px;
@@ -41,9 +47,38 @@
     text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
+/* Quan ly cap phep */
+.surfacewater-usage, .discharge-water, .construction-info, .exploit-surfacewater, .information-about-license-owner-title, #wastewater-wrap {
+    border: 1px solid #d5e6fb;
+}
+
+.surfacewater-usage-title, .discharge-water-title, .construction-info-title, .exploit-surfacewater-title, .information-about-license-owner-title {
+    background: #2f80ed33;
+}
+
+#surfacewater-usage { overflow-y: auto; height: calc(100vh - 156px);
+}
+
+#dams-num { left: 8px; top: 5px; }
+#slash { top: 8px; left: 27px; }
+#total-dams { top: 12px; left: 32px; }
+
+.bg-sw-title-box { background: #1491A5; }
+.bg-ww-title-box { background: #24963E; }
+.bg-euw-title-box { background: #E6AD04; }
+.bg-uwe-title-box { background: #C62F3E; }
+.bg-practise-title-box { background: #606160; }
+.qlcp-chart { overflow: hidden; }
+
 @media screen and (min-width: 768px){
-    .top-bar {
-        height: 35px;
-        line-height: 35px;
-    }
+    .top-bar { height: 35px; line-height: 35px; }
+    #dams-num { left: 46px; top: 17px; }
+    #slash { top: 21px; left: 65px; }
+    #total-dams { top: 25px; left: 70px; }
+}
+
+@media screen and (min-width: 1024px){
+    #dams-num { left: 11px; top: 3px; } 
+    #slash {top: 8px;left: 29px; }
+    #total-dams { top: 14px; left: 33px; }
 }

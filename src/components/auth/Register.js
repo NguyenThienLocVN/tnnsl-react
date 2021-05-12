@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios";
 import { trackPromise } from 'react-promise-tracker';
-import { Alert  } from '@material-ui/lab';
+import { Alert } from 'antd';
+import { UserOutlined, LockOutlined, BankOutlined, IdcardOutlined, PhoneOutlined, MailOutlined, HomeOutlined } from '@ant-design/icons';
+import configData from "../../config.json";
 
 export default class Login extends React.Component{
 	constructor(props)
@@ -46,7 +48,7 @@ export default class Login extends React.Component{
 	onSubmitHandler = (e) => {
 		trackPromise(
 			axios
-		  	.post("http://localhost/tnnsl-api/public/api/register", {
+		  	.post(configData.API_URL + "/register", {
 				name: this.state.signupData.name,
 				email: this.state.signupData.email,
 				password: this.state.signupData.password,
@@ -76,7 +78,7 @@ export default class Login extends React.Component{
 					});
 				}
 			})
-			.catch((error) => {
+			.catch((error) => {console.log(error);
                 this.setState({errorMsg: error.response.data.error_message});
             })
 		);
@@ -98,7 +100,7 @@ export default class Login extends React.Component{
 							</div>
 							<div className="d-flex align-items-center">
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Đối tượng <span className="text-danger">*</span></p>
-								<select onChange={this.onChangeTypehandler} className="col-7 d-flex ml-3 pl-2 pr-0 form-group input-group mb-1 font-14" defaultValue="0">
+								<select onChange={this.onChangeTypehandler} className="col-7 d-flex ml-3 pl-2 pr-0 custom-select input-group mb-1 font-14" >
 									<option value="0">Tổ chức</option>
 									<option value="1">Cá nhân</option>
 								</select>
@@ -108,7 +110,7 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Tên đăng nhập <span className="text-danger">*</span></p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"> <i className="fa fa-user" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"><UserOutlined /></span>
 									</div>
 									<input name="name" value={this.state.name} onChange={this.onChangehandler} className="form-control font-14" placeholder="Tên đăng nhập" type="text" required />
 								</div>
@@ -118,7 +120,7 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Mật khẩu <span className="text-danger">*</span></p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"> <i className="fa fa-lock" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"><LockOutlined /></span>
 									</div>
 									<input name="password" value={this.state.password} onChange={this.onChangehandler} className="form-control font-14" placeholder="Mật khẩu" type="password" required />
 								</div>
@@ -129,7 +131,7 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Tên doanh nghiệp <span className="text-danger">*</span></p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"><i className="fa fa-user-circle-o" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"><BankOutlined /></span>
 									</div>
 									<input name="organization_name" value={this.state.organization_name} onChange={this.onChangehandler} className="form-control font-14" placeholder="Tên doanh nghiệp" type="text" required />
 								</div>
@@ -141,7 +143,7 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Mã doanh nghiệp</p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"><i className="fa fa-university" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"><IdcardOutlined /></span>
 									</div>
 									<input name="organization_code" value={this.state.organization_code} onChange={this.onChangehandler} className="form-control font-14" placeholder="Mã doanh nghiệp" type="text" />
 								</div>
@@ -153,7 +155,7 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Địa chỉ <span className="text-danger">*</span></p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"> <i className="fa fa-map-marker" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"><HomeOutlined /></span>
 									</div>
 									<input name="address" value={this.state.address} onChange={this.onChangehandler} className="form-control font-14" placeholder="Địa chỉ" type="text" required/>
 								</div>
@@ -165,7 +167,7 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Trụ sở chính</p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"> <i className="fa fa-building" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"><HomeOutlined /></span>
 									</div>
 									<input name="organization_address" value={this.state.organization_address} onChange={this.onChangehandler} className="form-control font-14" placeholder="Trụ sở chính" type="text" />
 								</div>
@@ -176,7 +178,7 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Số điện thoại <span className="text-danger">*</span></p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"> <i className="fa fa-phone" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"><PhoneOutlined /></span>
 									</div>
 									<input name="phone" value={this.state.phone} onChange={this.onChangehandler} className="form-control font-14" placeholder="Số điện thoại" type="text" required />
 								</div>
@@ -186,22 +188,17 @@ export default class Login extends React.Component{
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Email <span className="text-danger">*</span></p>
 								<div className="col-8 d-flex pr-0 form-group input-group mb-1">
 									<div className="input-group-prepend">
-										<span className="input-group-text justify-content-center"> <i className="fa fa-envelope" aria-hidden="true"></i></span>
+										<span className="input-group-text justify-content-center"> <MailOutlined /></span>
 									</div>
 									<input name="email" value={this.state.email} onChange={this.onChangehandler} className="form-control font-14" placeholder="Email" type="text" required/>
 								</div>
 							</div>
 
-							{this.state.errorMsg && !this.state.successMsg ? 
-								<Alert severity="error">
-									{this.state.errorMsg}
-								</Alert>
-							 : "" }
+							{this.state.errorMsg ? 
+							<Alert className="mt-3" message={this.state.errorMsg} type="error" showIcon /> : "" }
 
 							{this.state.successMsg ? 
-								<Alert severity="success">
-									{this.state.successMsg}
-								</Alert>
+								<Alert className="mt-3" message={this.state.successMsg} type="success" showIcon />
 							: "" }
 
 							<div className="text-center d-flex pt-2 pb-3">

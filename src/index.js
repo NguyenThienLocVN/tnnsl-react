@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 import 'leaflet/dist/leaflet.css';
+import 'antd/dist/antd.css';
 
 import { usePromiseTracker } from "react-promise-tracker";
 import Loader from 'react-loader-spinner';
@@ -14,7 +14,7 @@ const LoadingIndicator = props => {
   const { promiseInProgress } = usePromiseTracker();
    return (
     promiseInProgress && 
-    <div
+    <div className="overlay"
       style={{
         position: "absolute",
         top: "45%",

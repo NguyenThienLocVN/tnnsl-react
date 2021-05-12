@@ -2,8 +2,12 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import axios from "axios";
 import { trackPromise } from 'react-promise-tracker';
+import { Alert } from 'antd';
+import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import configData from "../../config.json";
 
 import './Auth.css';
+
 
 export default class Login extends React.Component{
     constructor(props)
@@ -30,10 +34,11 @@ export default class Login extends React.Component{
         this.setState(data);
     };
 
-    onSignInHandler = () => {
+    onSignInHandler = (e) => {
+        e.preventDefault();
         trackPromise(
             axios
-            .post("http://localhost/tnnsl-api/public/api/login", {
+            .post(configData.API_URL + "/login", {
                 name: this.state.name,
                 password: this.state.password,
             })
@@ -60,37 +65,36 @@ export default class Login extends React.Component{
         return (
             <div>
                 <img src={process.env.PUBLIC_URL + '/images/screenshot-tai-nguyen-nuoc.png'} className="background-login" alt="screenshot-tai-nguyen-nuoc" />
-                <div className="form-login position-absolute">
+                <form onSubmit={this.onSignInHandler} className="form-login position-absolute">
         
                     <img src={process.env.PUBLIC_URL + '/images/ANHSOTNMT.png'} className="w-100 mb-3" alt="ANHSOTNMT" />
         
-                        <div>
-                            <div className="d-flex">
-                                <span className="input-group-text"><i className="fa fa-user" aria-hidden="true"></i></span>
-                                <input id="name" onChange={this.onChangehandler} className="form-control block w-full font-13" type="text" name="name" required autoFocus placeholder="Tên đăng nhập" />
-                            </div>
+                    <div>
+                        <div className="d-flex">
+                            <span className="input-group-text"><UserOutlined /></span>
+                            <input id="name" onChange={this.onChangehandler} className="form-control block w-full font-13 rounded-left" type="text" name="name" required autoFocus placeholder="Tên đăng nhập" />
                         </div>
-        
-                        <div className="mt-4">
-                            <div className="d-flex">
-                                <span className="input-group-text"><i className="fa fa-lock" aria-hidden="true"></i></span>
-                                <input id="password" onChange={this.onChangehandler} className="form-control block w-full font-13" type="password" name="password" required autoComplete="current-password" placeholder="Mật khẩu" />
-                            </div>
+                    </div>
+    
+                    <div className="mt-4">
+                        <div className="d-flex">
+                            <span className="input-group-text"><LockOutlined /></span>
+                            <input id="password" onChange={this.onChangehandler} className="form-control block w-full font-13 rounded-left" type="password" name="password" required autoComplete="current-password" placeholder="Mật khẩu" />
                         </div>
+                    </div>
 
-                        {this.state.msg ? <div className="alert alert-danger mt-3">
-                            <span>{this.state.msg}</span>
-                        </div> : "" }
-        
-                        <div className="text-center d-flex mt-3">
-                            <button onClick={this.onSignInHandler} className="col-5 btn font-13 button-login text-white">Đăng nhập</button>
-        
-                            <Link to="register" className="btn font-13 col-6">Đăng ký</Link>
-                        </div>
-                        <div className="text-center mt-4">
-                            <a className="underline text-sm text-gray-600 hover:text-gray-900 font-13 font-weight-bold" href="{{ route('password.request') }}">Quên mật khẩu?</a>
-                        </div>
-                </div> 
+                    {this.state.msg ? 
+                    <Alert className="mt-3" message={this.state.msg} type="error" showIcon /> : "" }
+    
+                    <div className="text-center d-flex mt-3">
+                        <input type="submit" className="col-5 btn font-13 button-login text-white" value="Đăng nhập" />
+    
+                        <Link to="register" className="btn font-13 col-6">Đăng ký</Link>
+                    </div>
+                    <div className="text-center mt-4">
+                        <a className="underline text-sm text-gray-600 hover:text-gray-900 font-13 font-weight-bold" href="{{ route('password.request') }}">Quên mật khẩu?</a>
+                    </div>
+                </form> 
             </div>
         )
     }
