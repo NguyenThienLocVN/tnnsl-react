@@ -1,3 +1,3 @@
 {
-    "API_URL": "http://localhost/tnnsl-api/public/api"
+    "API_URL": "http://localhost:8080/myWebsite/tnnsl-api-git/public/api"
 }
