@@ -4,21 +4,25 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Home from './components/page/Home';
 import QuanLyCapPhep from './components/page/QuanLyCapPhep/QuanLyCapPhep';
+import QuanLyCapPhepNuocMat from './components/page/QuanLyCapPhep/NuocMat';
+
 import BaoCaoBieuMau from './components/page/BaoCaoBieuMau/BaoCaoBieuMau';
 
 function App() {
   return (
-    <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
+		<BrowserRouter>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/login" component={Login} />
+				<Route exact path="/register" component={Register} />
 
-          {/* Quan ly cap phep */}
-          <Route exact path="/quan-ly-cap-phep" component={QuanLyCapPhep} />
-          <Route exact path="/bao-cao-bieu-mau" component={BaoCaoBieuMau} />
-        </Switch>
-      </BrowserRouter>
+				{/* Quan ly cap phep */}
+				<Route exact path="/quan-ly-cap-phep" component={QuanLyCapPhep} />
+				<Route exact path="/quan-ly-cap-phep/nuoc-mat" component={QuanLyCapPhepNuocMat} />
+
+				<Route exact path="/bao-cao-bieu-mau" component={BaoCaoBieuMau} />
+			</Switch>
+		</BrowserRouter>
   );
 }
 

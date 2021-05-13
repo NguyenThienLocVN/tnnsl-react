@@ -70,6 +70,9 @@
 .bg-practise-title-box { background: #606160; }
 .qlcp-chart { overflow: hidden; }
 
+.bg-sw-box img { height: 95px; width: 95px; }
+.bg-sw-box .badge { left: 50%; bottom: 0; transform: translateX(-50%); }
+
 @media screen and (min-width: 768px){
     .top-bar { height: 35px; line-height: 35px; }
     #dams-num { left: 46px; top: 17px; }

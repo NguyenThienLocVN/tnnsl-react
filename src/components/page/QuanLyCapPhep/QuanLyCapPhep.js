@@ -153,7 +153,7 @@ export default class QuanLyCapPhep extends React.Component {
                 <Header headTitle="QUẢN LÝ CẤP PHÉP" previousLink="/" showHeadImage={false} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-12 col-lg-3 px-0 menu-page discharge-water">
-                        <div className="col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-info">
+                        <Link to="/quan-ly-cap-phep/nuoc-mat" className="d-block col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-info">
                             <p className="bg-sw-title-box rounded mb-2 p-2 font-weight font-weight-bold text-center">NƯỚC MẶT</p>
                             <div className="font-weight-bold col-12 d-flex">
                                 <p className="col-9">Giấy phép: </p>
@@ -175,7 +175,7 @@ export default class QuanLyCapPhep extends React.Component {
                                 <p className="col-9">Chưa có GP thay thế: </p>
                                 <p className="col-3">100</p>
                             </div>
-                        </div>
+                        </Link>
 
                         <div className="col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-success">
                             <p className="bg-ww-title-box rounded mb-2 p-2 font-weight-bold text-center">XẢ THẢI VÀO NGUỒN NƯỚC</p>
