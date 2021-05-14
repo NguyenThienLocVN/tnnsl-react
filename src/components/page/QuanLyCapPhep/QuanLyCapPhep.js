@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../layout/Header';
 import { Link } from 'react-router-dom';
-import { ForwardOutlined, SearchOutlined, DownloadOutlined, LineChartOutlined } from '@ant-design/icons';
+import { SearchOutlined, DownloadOutlined, LineChartOutlined } from '@ant-design/icons';
 import { Bar, Doughnut } from 'react-chartjs-2';
 
 export default class QuanLyCapPhep extends React.Component {
@@ -155,71 +155,71 @@ export default class QuanLyCapPhep extends React.Component {
                     <div className="col-12 col-lg-5 px-0 menu-page discharge-water">
                         <div className="row m-0">
                             <div className="col-lg-5 p-0">
-                                <ul class="nav flex-column nav-pills pl-2 pb-1 mx-auto my-3 rounded">
+                                <ul className="nav flex-column nav-pills pl-2 pb-1 mx-auto my-3 rounded">
                                     <div className="exploit-surfacewater">
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">KHAI THÁC SD NƯỚC MẶT</p>
-                                        <li class="nav-item">
-                                            <Link to="/quan-ly-cap-phep/nuoc-mat" class="nav-link font-13 text-dark" href="#">Thủy Điện</Link>
+                                        <li className="nav-item">
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat" className="nav-link font-13 text-dark">Thủy Điện</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Hồ Chứa</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Hồ Chứa</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Trạm Bơm</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Trạm Bơm</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Đập / Hệ Thống Thủy Lợi</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Đập / Hệ Thống Thủy Lợi</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Cống</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Cống</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Trạm Cấp Nước</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Trạm Cấp Nước</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Nhà Máy Nước</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Nhà Máy Nước</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Công Trình Khác</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                     <div className="exploit-surfacewater">
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">KHAI THÁC SỬ DỤNG NDĐ</p>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Khai Thác</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Khai Thác</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Thăm Dò</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Thăm Dò</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Hành Nghề Khoan</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Hành Nghề Khoan</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Công Trình Khác</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                     <div className="exploit-surfacewater">
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">XẢ THẢI VÀO NN</p>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Khu / Cụm CN  Tập Trung</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Khu / Cụm CN  Tập Trung</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">SX Tiểu Thủ CN</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">SX Tiểu Thủ CN</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">SX KD Dịch Vụ</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">SX KD Dịch Vụ</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">CS Bệnh Viện</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">CS Bệnh Viện</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Khu Dân Cư / Làng Nghề</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Khu Dân Cư / Làng Nghề</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Chăn Nuôi / NTTS</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Chăn Nuôi / NTTS</Link>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link font-13 text-dark" href="#">Công Trình Khác</a>
+                                        <li className="nav-item">
+                                            <Link className="nav-link font-13 text-dark">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                 </ul>

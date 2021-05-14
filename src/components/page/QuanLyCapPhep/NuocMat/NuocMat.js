@@ -1,9 +1,8 @@
 import React from 'react';
 import Header from '../../../layout/Header';
 import { Link } from 'react-router-dom';
-import { Input } from 'antd';
 import { SearchOutlined, PlusOutlined, FileExcelOutlined } from '@ant-design/icons';
-import { Table, Tag, Space } from 'antd';
+import { Table, Tag } from 'antd';
 
 export default class QuanLyCapPhepNuocMat extends React.Component {
     constructor(props)
@@ -218,7 +217,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                                     </div>
                                     <button className="col-1 btn btn-info d-flex align-items-center justify-content-center">Tìm &nbsp;<SearchOutlined /></button>
                                 </div>
-                                <hr class="my-2" />
+                                <hr className="my-2" />
                             </div>
                             }
                             <div className="col-12 d-flex align-items-center justify-content-start pt-1 px-2">

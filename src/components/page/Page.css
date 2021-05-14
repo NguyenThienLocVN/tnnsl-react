@@ -80,6 +80,7 @@
 .step__button .ant-steps-navigation .ant-steps-item::after{
     display: none;
 }
+.vh-50{height: 50vh !important;}
 
 @media screen and (min-width: 768px){
     .top-bar { height: 35px; line-height: 35px; }

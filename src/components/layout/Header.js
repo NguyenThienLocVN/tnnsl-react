@@ -55,7 +55,7 @@ export default class Header extends React.Component {
                 :
                     <div className="bg-header-bar d-flex flex-column flex-lg-row top-bar">
                         <div className={this.state.leftBarClass}>
-                            <Link to={this.state.previousLink} id="btn_back_page" class="font-weight-bold text-white btn-home-top d-flex justify-content-center align-items-center">
+                            <Link to={this.state.previousLink} id="btn_back_page" className="font-weight-bold text-white btn-home-top d-flex justify-content-center align-items-center">
                                 <ArrowLeftOutlined />
                             </Link>
                             <div className="font-weight-bold text-white d-block pl-2">{this.state.headTitle}</div>

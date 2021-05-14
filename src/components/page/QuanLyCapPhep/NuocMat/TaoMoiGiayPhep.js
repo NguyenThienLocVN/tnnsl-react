@@ -820,21 +820,21 @@ const Step4Form = () => {
     return (
       <>
         
-        <div class="exploit-surfacewater mb-2">
-            <div class="row py-2 mx-0">
-                <div class="form-group col-sm-4">
+        <div className="exploit-surfacewater mb-2">
+            <div className="row py-2 mx-0">
+                <div className="form-group col-sm-4">
                     <label for="my-select">Vị trí quan trắc</label>
-                    <input type="text" class="form-control form-control-sm" placeholder=" -- Vị trí quan trắc -- " />
+                    <input type="text" className="form-control form-control-sm" placeholder=" -- Vị trí quan trắc -- " />
                 </div>
-                <div class="form-group col-sm-4">
+                <div className="form-group col-sm-4">
                     <label for="my-select">Quy chuẩn Việt Nam</label>
-                    <select  class="form-control form-control-sm bg-white" name="">
+                    <select  className="form-control form-control-sm bg-white" name="">
                         <option>QCVN 08-MT:2015/BTNMT</option>
                     </select>
                 </div>
-                <div class="form-group col-sm-4">
+                <div className="form-group col-sm-4">
                     <label for="my-select">Mục đích sử dụng</label>
-                    <select  class="form-control form-control-sm bg-white" name="">
+                    <select  className="form-control form-control-sm bg-white" name="">
                         <option>A1</option>
                         <option>A2</option>
                         <option>B1</option>
@@ -842,438 +842,438 @@ const Step4Form = () => {
                     </select>
                 </div>
             </div>
-            <div class="pb-2 mx-0 px-2">
-            <table class="table table-bordered table_overflow">
-                <thead class="thead-light">
-                    <tr class="text-center">
-                        <th class="font-13">#</th>
-                        <th class="font-13">Quan trắc tự động</th>
-                        <th class="font-13 text-nowrap">Thông số</th>
-                        <th class="font-13 text-nowrap">Đơn vị đo</th>
-                        <th class="font-13">Giá trị giới hạn nhỏ nhất</th>
-                        <th class="font-13">Giá trị giới hạn lớn nhất</th>
+            <div className="pb-2 mx-0 px-2">
+            <table className="table table-bordered table_overflow">
+                <thead className="thead-light">
+                    <tr className="text-center">
+                        <th className="font-13">#</th>
+                        <th className="font-13">Quan trắc tự động</th>
+                        <th className="font-13 text-nowrap">Thông số</th>
+                        <th className="font-13 text-nowrap">Đơn vị đo</th>
+                        <th className="font-13">Giá trị giới hạn nhỏ nhất</th>
+                        <th className="font-13">Giá trị giới hạn lớn nhất</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">1</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Mực nước hồ</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">1</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Mực nước hồ</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">2</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">2</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">3</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua nhà máy</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">3</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua nhà máy</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">4</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua tràn</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">4</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua tràn</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">5</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Giám sát bằng camera</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">5</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Giám sát bằng camera</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">6</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">6</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">7</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng khai thác</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">7</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng khai thác</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">1</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Mực nước hồ</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">1</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Mực nước hồ</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">2</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">2</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">3</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua nhà máy</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">3</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua nhà máy</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">4</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua tràn</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">4</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua tràn</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">5</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Giám sát bằng camera</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">5</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Giám sát bằng camera</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">6</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">6</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">7</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng khai thác</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">7</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng khai thác</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">1</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Mực nước hồ</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">1</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Mực nước hồ</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">2</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">2</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">3</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua nhà máy</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">3</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua nhà máy</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">4</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua tràn</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">4</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua tràn</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">5</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Giám sát bằng camera</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">5</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Giám sát bằng camera</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">6</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">6</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">7</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng khai thác</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">7</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng khai thác</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">1</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Mực nước hồ</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">1</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Mực nước hồ</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">2</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">2</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả duy trì dòng chảy tối thiểu</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">3</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua nhà máy</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">3</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua nhà máy</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">4</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng xả qua tràn</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">4</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng xả qua tràn</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">5</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Giám sát bằng camera</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">5</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Giám sát bằng camera</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">6</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">6</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Chất lượng nước trong quá trình khai thác theo quy định</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
-                    <tr class="text-left">
-                        <td class="font-13 text-center">7</td>
-                        <td class="text-center"><input type="checkbox" /></td>
-                        <td class="text-wrap">Lưu lượng khai thác</td>
+                    <tr className="text-left">
+                        <td className="font-13 text-center">7</td>
+                        <td className="text-center"><input type="checkbox" /></td>
+                        <td className="text-wrap">Lưu lượng khai thác</td>
                         <td>
-                            <div class="form-group">
-                                <select  class="form-control  form-control-sm bg-white" name="don_vi">
-                                    <option value="m" class="text-center">m</option>
-                                    <option value="mm" class="text-center">mm</option>
+                            <div className="form-group">
+                                <select  className="form-control  form-control-sm bg-white" name="don_vi">
+                                    <option value="m" className="text-center">m</option>
+                                    <option value="mm" className="text-center">mm</option>
                                 </select>
                             </div>
                         </td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
-                        <td><input class="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
+                        <td><input className="form-control form-control-sm" type="number" /></td>
                     </tr>
                 </tbody>
             </table>
@@ -1345,7 +1345,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                     <div className="col-12 col-lg-6 px-0 menu-page discharge-water">
                         <form className="pb-5">
                         <div className="col-sm-12 px-0 pb-3 step__button">
-                            <Steps type="navigation" size="small" current={current} onChange={this.onChange} className="site-navigation-steps" current={current} onChange={this.onChange}>
+                            <Steps type="navigation" size="small" current={current} onChange={this.onChange} className="site-navigation-steps" >
                                 {steps.map(item => (
                                     <Step key={item.title} icon={item.icon}  title={item.title} />
                                 ))}

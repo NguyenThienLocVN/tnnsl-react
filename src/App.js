@@ -6,6 +6,10 @@ import Home from './components/page/Home';
 import QuanLyCapPhep from './components/page/QuanLyCapPhep/QuanLyCapPhep';
 import QuanLyCapPhepNuocMat from './components/page/QuanLyCapPhep/NuocMat/NuocMat';
 import QuanLyCapPhepTaoGiayPhepNuocMat from './components/page/QuanLyCapPhep/NuocMat/TaoMoiGiayPhep';
+import QuanLyCapPhepNuocMatXemThongTinThuyDien from './components/page/QuanLyCapPhep/NuocMat/CongTrinhThuyDien/XemThongTinChung';
+import QuanLyCapPhepNuocMatXemThongTinCongTrinh from './components/page/QuanLyCapPhep/NuocMat/CongTrinhThuyDien/ThongTinCongTrinh';
+import QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung from './components/page/QuanLyCapPhep/NuocMat/CongTrinhThuyDien/GiamSatKhatThacSuDung';
+import QuanLyCapPhepNuocMatChatLuongNuocMat from './components/page/QuanLyCapPhep/NuocMat/CongTrinhThuyDien/ChatLuongNuocMat';
 
 import BaoCaoBieuMau from './components/page/BaoCaoBieuMau/BaoCaoBieuMau';
 
@@ -21,6 +25,10 @@ function App() {
 				<Route exact path="/quan-ly-cap-phep" component={QuanLyCapPhep} />
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat" component={QuanLyCapPhepNuocMat} />
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat/tao-moi" component={QuanLyCapPhepTaoGiayPhepNuocMat} />
+				<Route exact path="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung" component={QuanLyCapPhepNuocMatXemThongTinThuyDien} />
+				<Route exact path="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh" component={QuanLyCapPhepNuocMatXemThongTinCongTrinh} />
+				<Route exact path="/quan-ly-cap-phep/nuoc-mat/thuy-dien/giam-sat-khai-thac-su-dung" component={QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung} />
+				<Route exact path="/quan-ly-cap-phep/nuoc-mat/thuy-dien/chat-luong-nuoc-mat" component={QuanLyCapPhepNuocMatChatLuongNuocMat} />
 
 				<Route exact path="/bao-cao-bieu-mau" component={BaoCaoBieuMau} />
 			</Switch>
