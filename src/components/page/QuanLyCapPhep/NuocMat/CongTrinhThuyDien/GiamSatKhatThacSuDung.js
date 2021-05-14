@@ -20,7 +20,7 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
         const { mode } = this.state;
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN" previousLink="/" showHeadImage={false} />
+                <Header headTitle="THỦY ĐIỆN | GIÁM SÁT KHAI THÁC SỬ DỤNG" previousLink="/" showHeadImage={false} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <p className="col-lg-12 px-0 font-weight-bold my-2"> "Contruction Name" / Giấy phép khai thác nước mặt / Công trình thủy điện / "Contruction Name" </p>
