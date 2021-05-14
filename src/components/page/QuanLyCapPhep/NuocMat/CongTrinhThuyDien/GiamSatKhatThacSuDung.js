@@ -20,20 +20,20 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
         const { mode } = this.state;
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | GIÁM SÁT KHAI THÁC SỬ DỤNG" previousLink="/" showHeadImage={false} />
+                <Header headTitle="THỦY ĐIỆN | GIÁM SÁT KTSD" previousLink="/" showHeadImage={false} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
-                        <p className="col-lg-12 px-0 font-weight-bold my-2"> "Contruction Name" / Giấy phép khai thác nước mặt / Công trình thủy điện / "Contruction Name" </p>
+                        <p className="col-lg-12 px-2 font-weight-bold my-2"> Contruction Name / Giấy phép khai thác nước mặt / Công trình thủy điện / Contruction Name </p>
                         <div className="col-lg-2">
                             <nav className="nav flex-column nav-pills">
-                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung" className="nav-link ">Thông tin chung</Link>
-                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh" className="nav-link ">Thông tin công trình</Link>
-                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/giam-sat-khai-thac-su-dung" className="nav-link active">Giám sát KTSD</Link>
-                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/chat-luong-nuoc-mat" className="nav-link">Chất lượng nước mặt</Link>
-                                <Link to="#" className="nav-link">Hồ sơ cấp phép</Link>
+                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung" className="nav-link text-dark border-bottom ">Thông tin chung</Link>
+                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh" className="nav-link text-dark border-bottom ">Thông tin công trình</Link>
+                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/giam-sat-khai-thac-su-dung" className="nav-link text-dark border-bottom active">Giám sát KTSD</Link>
+                                <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/chat-luong-nuoc-mat" className="nav-link text-dark border-bottom">Chất lượng nước mặt</Link>
+                                <Link to="#" className="nav-link text-dark border-bottom">Hồ sơ cấp phép</Link>
                             </nav>
                         </div>
-                        <div className="col-12 col-lg-10 px-md-1 vh-50">
+                        <div className="col-12 col-lg-10 px-md-1 vh-50 pr-2">
                             <Map className="col-12" />
 
                             <Tabs className="col-12" defaultActiveKey="1" tabPosition={ mode }>

@@ -82,6 +82,13 @@
 }
 .vh-50{height: 50vh !important;}
 
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #1874bd !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px){
     .top-bar { height: 35px; line-height: 35px; }
     #dams-num { left: 46px; top: 17px; }
