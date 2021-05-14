@@ -135,118 +135,37 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
     render(){
         return(
 			<div className="p-0">
-                <Header headTitle="QUẢN LÝ CẤP PHÉP" previousLink="/quan-ly-cap-phep" showHeadImage={false} />
+                <Header headTitle="NƯỚC MẶT | THỦY ĐIỆN" previousLink="/quan-ly-cap-phep" showHeadImage={false} />
                 <main className="d-flex flex-column flex-lg-row">
-                    <div className="col-12 col-lg-3 px-0 menu-page discharge-water">
-                        <div className="col-11 pb-1 mx-auto my-2 rounded text-white px-0 bg-info bg-sw-box">
-                            <p className="bg-sw-title-box rounded mb-2 p-2 font-weight font-weight-bold text-center">NƯỚC MẶT</p>
-                            <div className="font-weight-bold col-12 d-flex">
-                                <p className="col-9">Tổng số: </p>
-                                <p className="col-3">500</p>
-                            </div>
-                            <div className="font-weight-bold col-12 d-flex">
-                                <p className="col-9">Còn hiệu lực: </p>
-                                <p className="col-3">100</p>
-                            </div>
-                            <div className="font-weight-bold col-12 d-flex">
-                                <p className="col-9">Sắp hết hiệu lực: </p>
-                                <p className="col-3">100</p>
-                            </div>
-                            <div className="font-weight-bold col-12 d-flex">
-                                <p className="col-9">Hết hiệu lực: </p>
-                                <p className="col-3">100</p>
-                            </div>
-                            <div className="font-weight-bold col-12 d-flex">
-                                <p className="col-9">Chưa phê duyệt: </p>
-                                <p className="col-3">100</p>
-                            </div>
-                            <div className="font-weight-bold col-12 d-flex">
-                                <p className="col-9">Chưa có GP thay thế: </p>
-                                <p className="col-3">100</p>
-                            </div>
-                            <hr className="w-50 mx-auto border-white"  />
-                            <div className="row m-0">
-                                <div className="col-sm-4 mb-3">
-                                    <div className="position-relative">
-                                        <div className="img__contruction">
-                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/ANH_HETHONGGIAMSAT.png'} className="p-0 d-block mx-auto h-100" alt="ANH_HETHONGGIAMSAT" />
+                    <div className="col-12 col-lg-2 px-0 menu-page discharge-water">
+                        <div className="col-12 p-0 p-2">
+                            <div  className="row  mx-0">
+                                <div className="col-lg-6 px-1">
+                                    <div className="col-lg-12 px-0 row mx-0 exploit-surfacewater">
+                                        <p className="col-12 px-0 text-center mb-0 font-weight-bold">Tổng số CT</p>
+                                        <div className="col-6 p-0">
+                                            <p className="font-weight-bold text-center text-danger mb-0">100</p>
                                         </div>
-                                        <div className="position-absolute bg-white p-1 rounded badge" title="Số công trình còn hiệu lực cấp phép">
-                                            <span className="text-success font-weight-bold font-15">45/100</span>
+                                        <div className="col-6 p-0">
+                                            <img className="w-100" src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG-TRINH-THUY-DIEN/all_ct.jpg'} alt="Tổng số CT" />
                                         </div>
                                     </div>
-                                    <p className="font-weight-bold font-12 m-0 text-center">Thủy điện</p>
                                 </div>
-                                <div className="col-sm-4 mb-3">
-                                    <div className="position-relative">
-                                        <div className="img__contruction">
-                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/ANH_HETHONGGIAMSAT.png'} className="p-0 d-block mx-auto h-100" alt="ANH_HETHONGGIAMSAT" />
+                                <div className="col-lg-6 px-1">
+                                    <div className="col-lg-12 px-0 row mx-0 exploit-surfacewater">
+                                        <p className="col-12 px-0 text-center mb-0 font-weight-bold">Tổng số CT</p>
+                                        <div className="col-6 p-0">
+                                            <p className="font-weight-bold text-center text-danger mb-0">20/100</p>
                                         </div>
-                                        <div className="position-absolute bg-white p-1 rounded badge" title="Số công trình còn hiệu lực cấp phép">
-                                            <span className="text-success font-weight-bold font-15">45/100</span>
-                                        </div>
-                                    </div>
-                                    <p className="font-weight-bold font-12 m-0 text-center">Hồ chứa</p>
-                                </div>
-                                <div className="col-sm-4 mb-3">
-                                    <div className="position-relative">
-                                        <div className="img__contruction">
-                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/ANH_HETHONGGIAMSAT.png'} className="p-0 d-block mx-auto h-100" alt="ANH_HETHONGGIAMSAT" />
-                                        </div>
-                                        <div className="position-absolute bg-white p-1 rounded badge" title="Số công trình còn hiệu lực cấp phép">
-                                            <span className="text-success font-weight-bold font-15">45/100</span>
+                                        <div className="col-6 p-0">
+                                            <img className="w-100" src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG-TRINH-THUY-DIEN/all_ct.jpg'} alt="Tổng số CT" />
                                         </div>
                                     </div>
-                                    <p className="font-weight-bold font-12 m-0 text-center">Bai đập</p>
-                                </div>
-                                <div className="col-sm-4 mb-3">
-                                    <div className="position-relative">
-                                        <div className="img__contruction">
-                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/ANH_HETHONGGIAMSAT.png'} className="p-0 d-block mx-auto h-100" alt="ANH_HETHONGGIAMSAT" />
-                                        </div>
-                                        <div className="position-absolute bg-white p-1 rounded badge" title="Số công trình còn hiệu lực cấp phép">
-                                            <span className="text-success font-weight-bold font-15">45/100</span>
-                                        </div>
-                                    </div>
-                                    <p className="font-weight-bold font-12 m-0 text-center">Trạm bơm</p>
-                                </div>
-                                <div className="col-sm-4 mb-3">
-                                    <div className="position-relative">
-                                        <div className="img__contruction">
-                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/ANH_HETHONGGIAMSAT.png'} className="p-0 d-block mx-auto h-100" alt="ANH_HETHONGGIAMSAT" />
-                                        </div>
-                                        <div className="position-absolute bg-white p-1 rounded badge" title="Số công trình còn hiệu lực cấp phép">
-                                            <span className="text-success font-weight-bold font-15">45/100</span>
-                                        </div>
-                                    </div>
-                                    <p className="font-weight-bold font-12 m-0 text-center">Cống</p>
-                                </div>
-                                <div className="col-sm-4 mb-3">
-                                    <div className="position-relative">
-                                        <div className="img__contruction">
-                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/ANH_HETHONGGIAMSAT.png'} className="p-0 d-block mx-auto h-100" alt="ANH_HETHONGGIAMSAT" />
-                                        </div>
-                                        <div className="position-absolute bg-white p-1 rounded badge" title="Số công trình còn hiệu lực cấp phép">
-                                            <span className="text-success font-weight-bold font-15">45/100</span>
-                                        </div>
-                                    </div>
-                                    <p className="font-weight-bold font-12 m-0 text-center">Trạm cấp nước</p>
-                                </div>
-                                <div className="col-sm-4 mb-3">
-                                    <div className="position-relative">
-                                        <div className="img__contruction">
-                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/ANH_HETHONGGIAMSAT.png'} className="p-0 d-block mx-auto h-100" alt="ANH_HETHONGGIAMSAT" />
-                                        </div>
-                                        <div className="position-absolute bg-white p-1 rounded badge" title="Số công trình còn hiệu lực cấp phép">
-                                            <span className="text-success font-weight-bold font-15">45/100</span>
-                                        </div>
-                                    </div>
-                                    <p className="font-weight-bold font-12 m-0 text-center">Nhà máy nước</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-9 menu-page px-md-1">
+                    <div className="col-12 col-lg-10 menu-page px-md-1">
                         <div className="col-12 p-0 mt-2 card">
                             <div className="card-header font-weight-bold">Giấy phép khai thác nước mặt</div>
                             {this.state.showSearch &&
