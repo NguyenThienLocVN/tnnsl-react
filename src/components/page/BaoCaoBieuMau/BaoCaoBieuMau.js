@@ -13,7 +13,7 @@ export default class BaoCaoBieuMau extends React.Component {
 
         return(
 			<div className="p-0">
-                <Header headTitle="BÁO CÁO BIỂU MẪU" previousLink="/" showHeadImage={false} />
+                <Header headTitle="BÁO CÁO BIỂU MẪU" previousLink="/" showHeadImage={true} />
                 <main className="d-flex flex-column">
                     <div className="input-group col-4 py-2 mx-auto">
                         <input type="text" className="form-control" placeholder="Tìm kiếm" aria-label="Tìm kiếm" aria-describedby="basic-addon2" />
@@ -21,7 +21,7 @@ export default class BaoCaoBieuMau extends React.Component {
                             <button className="btn btn-outline-danger d-flex align-items-center" type="button"><SearchOutlined /></button>
                         </div>
                     </div>
-                    <div className="col-12 px-0 menu-page d-flex flex-column flex-lg-row">
+                    <div className="col-12 px-0 menu-home d-flex flex-column flex-lg-row">
                         {/* Block 1 */}
                         <div className="col-12 col-lg-3 pb-3 pb-lg-0 px-0 mb-lg-3 report-block-one">
                             <Link to="#" className="nav-link col-12 d-flex align-items-center report-item report-item-one py-3 py-lg-0">

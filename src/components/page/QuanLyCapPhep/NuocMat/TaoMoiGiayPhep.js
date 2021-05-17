@@ -1351,9 +1351,9 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
           const { current } = this.state;
         return(
 			<div className="p-0">
-                <Header headTitle="CẤP MỚI GIẤY PHÉP NƯỚC MẶT" previousLink="/quan-ly-cap-phep/nuoc-mat" showHeadImage={false} />
+                <Header headTitle="CẤP MỚI GIẤY PHÉP NƯỚC MẶT" previousLink="/quan-ly-cap-phep/nuoc-mat/thuy-dien" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
-                    <div className="col-12 col-lg-6 px-0 menu-page discharge-water">
+                    <div className="col-12 col-lg-6 px-0 menu-home discharge-water">
                         <form className="pb-5">
                         <div className="col-sm-12 px-0 pb-3 step__button">
                             <Steps type="navigation" size="small" current={current} onChange={this.onChange} className="site-navigation-steps" >
@@ -1392,7 +1392,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                             </div>
                         </form> 
                     </div>
-                    <div className="col-12 col-lg-6 menu-page px-md-1">
+                    <div className="col-12 col-lg-6 menu-home px-md-1">
                         <Map />
                     </div>
                 </main>

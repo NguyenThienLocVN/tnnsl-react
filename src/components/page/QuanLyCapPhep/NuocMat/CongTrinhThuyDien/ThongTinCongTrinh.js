@@ -20,7 +20,7 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
         const { mode } = this.state;
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN CÔNG TRÌNH" previousLink="/quan-ly-cap-phep/nuoc-mat" showHeadImage={false} />
+                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN CÔNG TRÌNH" previousLink="/quan-ly-cap-phep/nuoc-mat" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <div className="col-lg-2    ">
@@ -32,7 +32,7 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
                                 <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/ho-so-cap-phep" className="nav-link text-dark border-bottom">Hồ sơ cấp phép</Link>
                             </nav>
                         </div>
-                        <div className="col-12 col-lg-10 px-md-1 pr-2 menu-page discharge-water">
+                        <div className="col-12 col-lg-10 px-md-1 pr-2 menu-home discharge-water">
                             <div className="col-12 px-0">
                                 <div className="vh-50 col-12 px-0">
                                     <Map className="col-12" />

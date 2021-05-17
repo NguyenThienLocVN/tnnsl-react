@@ -10,10 +10,10 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
     render(){
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN CÔNG TRÌNH" previousLink="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh" showHeadImage={false} />
+                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN CÔNG TRÌNH" previousLink="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
-                        <div className="col-lg-6 px-0 menu-page discharge-water">
+                        <div className="col-lg-6 px-0 menu-home discharge-water">
                             <div className="row mx-0 mb-3">
                                 <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight font-weight-bold text-left">THÔNG TIN CHUNG</p>
                                 <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
@@ -145,31 +145,31 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                             <th>Tuyến đập</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-warning btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Cửa lấy nước</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-warning btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Nhà máy thủy điện</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-warning btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Cửa xả sau nhà máy</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-warning btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Công trình xả tối thiểu</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-warning btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -20,7 +20,7 @@ export default class QuanLyCapPhepNuocMatXemThongTinThuyDien extends React.Compo
         const { mode } = this.state;
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN CHUNG" previousLink="/" showHeadImage={false} />
+                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN CHUNG" previousLink="/" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <div className="col-lg-2">
@@ -32,7 +32,7 @@ export default class QuanLyCapPhepNuocMatXemThongTinThuyDien extends React.Compo
                                 <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/ho-so-cap-phep" className="nav-link text-dark border-bottom">Hồ sơ cấp phép</Link>
                             </nav>
                         </div>
-                        <div className="col-12 col-lg-10 px-md-1 pr-2 menu-page discharge-water">
+                        <div className="col-12 col-lg-10 px-md-1 pr-2 menu-home discharge-water">
                             <div className="col-12 px-0 vh-50">
                                 <Map className="col-12" />
                             </div>

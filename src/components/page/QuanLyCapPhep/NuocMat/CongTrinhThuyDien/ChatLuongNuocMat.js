@@ -12,7 +12,7 @@ export default class QuanLyCapPhepNuocMatChatLuongNuocMat extends React.Componen
     render(){
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | CHẤT LƯỢNG NƯỚC MẶT" previousLink="/" showHeadImage={false} />
+                <Header headTitle="THỦY ĐIỆN | CHẤT LƯỢNG NƯỚC MẶT" previousLink="/" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <div className="col-lg-2">
@@ -24,7 +24,7 @@ export default class QuanLyCapPhepNuocMatChatLuongNuocMat extends React.Componen
                                 <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/ho-so-cap-phep" className="nav-link text-dark border-bottom">Hồ sơ cấp phép</Link>
                             </nav>
                         </div>
-                        <div className="col-12 row mx-0 col-lg-10 px-md-1 pr-2 menu-page discharge-water">
+                        <div className="col-12 row mx-0 col-lg-10 px-md-1 pr-2 menu-home discharge-water">
                             <div className="col-12 px-0">
                                 <div className="col-lg-12 vh-50 px-0 mb-3">
                                     <Map className="col-12 h-100" />

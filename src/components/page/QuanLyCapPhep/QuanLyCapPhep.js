@@ -150,9 +150,9 @@ export default class QuanLyCapPhep extends React.Component {
 
         return(
 			<div className="p-0">
-                <Header headTitle="QUẢN LÝ CẤP PHÉP" previousLink="/" showHeadImage={false} />
+                <Header headTitle="QUẢN LÝ CẤP PHÉP" previousLink="/" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
-                    <div className="col-12 col-lg-5 px-0 menu-page discharge-water">
+                    <div className="col-12 col-lg-5 px-0 menu-home discharge-water">
                         <div className="row m-0">
                             <div className="col-lg-5 p-0">
                                 <ul className="nav flex-column nav-pills pl-2 pb-1 mx-auto my-3 rounded">
@@ -347,7 +347,7 @@ export default class QuanLyCapPhep extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-7 menu-page px-md-1">
+                    <div className="col-12 col-lg-7 menu-home px-md-1">
                         <div className="qlcp-chart col-12 p-0 mt-3 card">
                             <div className="card-header">Số lượng giấy phép công trình được cấp theo năm</div>
                             <div className="col-12 d-flex pt-2">

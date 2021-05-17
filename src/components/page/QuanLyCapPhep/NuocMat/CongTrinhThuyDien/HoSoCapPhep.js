@@ -11,7 +11,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
     render(){
         return(
             <div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | HỒ SƠ CẤP PHÉP" previousLink="/quan-ly-cap-phep/nuoc-mat" showHeadImage={false} />
+                <Header headTitle="THỦY ĐIỆN | HỒ SƠ CẤP PHÉP" previousLink="/quan-ly-cap-phep/nuoc-mat" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <div className="col-lg-2    ">
@@ -25,7 +25,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                         </div>
                         <div className="col-12 col-lg-10 px-md-1 pr-2">
                             <div className="col-12 row mx-0 px-0">
-                                <div className="col-lg-6 px-0 menu-page discharge-water">
+                                <div className="col-lg-6 px-0 menu-home discharge-water">
                                     <div className="row mx-0 mb-3">
                                         <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight font-weight-bold text-left">HỒ SƠ CẤP PHÉP CÔNG TRÌNH</p>
                                         <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
@@ -39,49 +39,49 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Đơn xin cấp phép:</div>
                                             <div className="col-6 px-0 row mx-0 text-13">
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm mr-3"> Xem </button>
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm mr-3"> In Giấy Phép </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-success btn-sm mr-3"> Xem </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-info btn-sm mr-3"> In Giấy Phép </button>
                                             </div>
                                         </div>
                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Báo cáo đề án KTSD:</div>
                                             <div className="col-6 px-0 text-13">
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm"> Xem </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-success btn-sm"> Xem </button>
                                             </div>
                                         </div>
                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Kết quả phân tích CLN:</div>
                                             <div className="col-6 px-0 text-13">
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm mx-auto"> Xem </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-success btn-sm mx-auto"> Xem </button>
                                             </div>
                                         </div>
                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Văn bản ý kiến cộng đồng:</div>
                                             <div className="col-6 px-0 text-13">
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm mx-auto"> Xem </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-success btn-sm mx-auto"> Xem </button>
                                             </div>
                                         </div>
                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Giấy tờ khác:</div>
                                             <div className="col-6 px-0 text-13">
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm mx-auto"> Xem </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-success btn-sm mx-auto"> Xem </button>
                                             </div>
                                         </div>
                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Quyết định phê duyệt giấy phép lần 1:</div>
                                             <div className="col-6 px-0 text-13">
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm mx-auto"> Xem </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-success btn-sm mx-auto"> Xem </button>
                                             </div>
                                         </div>
                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Quyết định phê duyệt giấy phép lần 2:</div>
                                             <div className="col-6 px-0 text-13">
-                                                <button type="button" name="" id="" className="btn btn-primary btn-sm mx-auto"> Xem </button>
+                                                <button type="button" name="" id="" className="btn btn-outline-success btn-sm mx-auto"> Xem </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-lg-6 px-md-1 menu-page pr-2">
+                                <div className="col-12 col-lg-6 px-md-1 menu-home pr-2">
                                     <Map className="h-100" />
                                 </div>
                             </div>

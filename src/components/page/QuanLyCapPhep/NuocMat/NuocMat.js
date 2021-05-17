@@ -18,7 +18,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                 {
                   title: 'Số giấy phép',
                   dataIndex: 'so_giay_phep',
-                  render: (text, id) => <Link to={id}>{text}</Link>,
+                  render: (text, id ) => <Link to={id} key={id} >{text}</Link>,
                 },
                 {
                   title: 'Ngày ký',
@@ -77,6 +77,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
             data : [
                 {
                   id: '1',
+                  href: "/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung",
                   so_giay_phep: '482/GP-BTNMT',
                   ngay_ky: '11/05/2021',
                   ten_cong_trinh: 'Thủy điện Sơ Vin',
@@ -87,6 +88,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                 },
                 {
                   id: '2',
+                  href: "/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung",
                   so_giay_phep: '773/GP-BTNMT',
                   ngay_ky: '04/05/2021',
                   ten_cong_trinh: 'Thủy điện Nậm Pia',
@@ -97,6 +99,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                 },
                 {
                   id: '3',
+                  href: "/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung",
                   so_giay_phep: '2011/GP-BTNMT',
                   ngay_ky: '20/04/2021',
                   ten_cong_trinh: 'Thủy điện Sập Việt',
@@ -107,6 +110,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                 },
                 {
                   id: '4',
+                  href: "/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung",
                   so_giay_phep: '3482/GP-BTNMT',
                   ngay_ky: '15/04/2021',
                   ten_cong_trinh: 'Thủy điện Huội Quảng',
@@ -134,9 +138,9 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
     render(){
         return(
 			<div className="p-0">
-                <Header headTitle="NƯỚC MẶT | THỦY ĐIỆN" previousLink="/quan-ly-cap-phep" showHeadImage={false} />
+                <Header headTitle="NƯỚC MẶT | THỦY ĐIỆN" previousLink="/quan-ly-cap-phep" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
-                    <div className="col-12 col-lg-2 px-0 menu-page discharge-water">
+                    <div className="col-12 col-lg-2 px-0 menu-home discharge-water">
                         <div className="col-12 p-0 p-2">
                             <div  className="row  mx-0">
                                 <div className="col-lg-6 px-1">
@@ -164,7 +168,7 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-10 menu-page px-md-1">
+                    <div className="col-12 col-lg-10 menu-home px-md-1">
                         <div className="col-12 p-0 mt-2 card">
                             <div className="card-header font-weight-bold">Giấy phép khai thác nước mặt</div>
                             {this.state.showSearch &&
