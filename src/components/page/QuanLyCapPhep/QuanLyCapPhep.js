@@ -158,8 +158,8 @@ export default class QuanLyCapPhep extends React.Component {
                                 <ul className="nav flex-column nav-pills pl-2 pb-1 mx-auto my-3 rounded">
                                     <div className="exploit-surfacewater">
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">KHAI THÁC SD NƯỚC MẶT</p>
-                                        <li className="nav-item">
-                                            <Link to="/quan-ly-cap-phep/nuoc-mat" className="nav-link font-13 text-dark">Thủy Điện</Link>
+                                        <li class="nav-item">
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien" class="nav-link font-13 text-dark" href="#">Thủy Điện</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link to="#" className="nav-link font-13 text-dark">Hồ Chứa</Link>

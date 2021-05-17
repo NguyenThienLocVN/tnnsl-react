@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React from 'react';
 import Header from '../../../layout/Header';
 import { Steps, Button, message } from 'antd';
