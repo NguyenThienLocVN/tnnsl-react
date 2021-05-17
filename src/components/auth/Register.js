@@ -101,8 +101,8 @@ export default class Login extends React.Component{
 							<div className="d-flex align-items-center">
 								<p className="col-4 p-0 m-0 font-weight-bold text-left font-14">Đối tượng <span className="text-danger">*</span></p>
 								<select onChange={this.onChangeTypehandler} className="col-7 d-flex ml-3 pl-2 pr-0 custom-select input-group mb-1 font-14" >
-									<option value="0">Tổ chức</option>
-									<option value="1">Cá nhân</option>
+									<option defaultValue="0">Tổ chức</option>
+									<option defaultValue="1">Cá nhân</option>
 								</select>
 							</div>
 

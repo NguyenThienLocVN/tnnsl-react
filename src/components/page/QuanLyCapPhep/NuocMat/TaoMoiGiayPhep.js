@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../../../layout/Header';
 import { Steps, Button, message } from 'antd';
 import Map from '../../../layout/Map';
-import { SolutionOutlined, BankOutlined, BarChartOutlined, StarFilled, UploadOutlined, RightOutlined, LeftOutlined,SaveOutlined } from '@ant-design/icons';
-import { Modal} from 'react-bootstrap';
+import { SolutionOutlined, BankOutlined, BarChartOutlined, StarFilled, RightOutlined, LeftOutlined,SaveOutlined } from '@ant-design/icons';
 import FormThongTinChung from "./CongTrinhThuyDien/FormCreate/FormThongTinChung";
 import FormThongTinCongTrinh from "./CongTrinhThuyDien/FormCreate/FormThongTinCongTrinh";
 import FormGiamSatKTSD from "./CongTrinhThuyDien/FormCreate/FormGiamSatKTSD";
@@ -40,91 +39,6 @@ const Step4Form = () => {
       </>
     );
 };
-
-function ModalThanhTraKiemTra() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-    return (
-      <>
-        <Button className="btn-primary btn-sm" onClick={handleShow}>
-          Thêm dữ liệu
-        </Button>
-        <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-                <Modal.Title>Thanh tra - Kiểm tra</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <div className="form-group">
-                    <label className="font-13 font-weight-bold" htmlFor="ten_dot_tt">Tên đợt</label>
-                    <input type="text" className="form-control font-13" id="ten_dot_tt" placeholder="Tên đợt thanh tra" />
-                </div>
-                <div className="form-group">
-                    <label className="font-13 font-weight-bold" htmlFor="ten_don_vi_tt">Tên đơn vị thực hiện</label>
-                    <input type="text" className="form-control font-13" id="ten_don_vi_tt" placeholder="Tên đơn vị thực hiện" />
-                </div>
-                <div className="form-group">
-                    <label className="font-13 font-weight-bold" htmlFor="ten_truong_doan_tt">Tên trưởng đoàn</label>
-                    <input type="text" className="form-control font-13" id="ten_truong_doan_tt" placeholder="Tên trưởng đoàn" />
-                </div>
-                <div className="form-group">
-                    <label className="font-13 font-weight-bold" htmlFor="nam_tt">Năm thực hiện</label>
-                    <input type="text" className="form-control font-13" id="nam_tt" placeholder="Năm thực hiện" />
-                </div>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>   
-            </Modal.Footer>
-        </Modal>
-      </>
-    );
-  }
-
-  function TienCapQuyen() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    return (
-        <>
-        <Button className="btn-primary btn-sm" onClick={handleShow}>
-            Thêm dữ liệu
-        </Button>
-        <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-                <Modal.Title>Tiền cấp quyền khai thác sử dụng</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <div className="form-group">
-                    <label className="font-13 font-weight-bold" htmlFor="so_quyet_dinh">Số quyết định</label>
-                    <input type="text" className="form-control font-13" id="so_quyet_dinh" placeholder="Số quyết định" />
-                </div>
-                <div className="form-group">
-                    <label className="font-13 font-weight-bold" htmlFor="tong_tien">Tổng tiền</label>
-                    <input type="text" className="form-control font-13" id="tong_tien" placeholder="Tổng tiền" />
-                </div>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>   
-            </Modal.Footer>
-        </Modal>
-        </>
-    );
-}
-
 
 const steps = [
     {

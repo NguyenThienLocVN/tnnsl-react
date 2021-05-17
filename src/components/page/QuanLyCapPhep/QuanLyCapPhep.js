@@ -158,8 +158,8 @@ export default class QuanLyCapPhep extends React.Component {
                                 <ul className="nav flex-column nav-pills pl-2 pb-1 mx-auto my-3 rounded">
                                     <div className="exploit-surfacewater">
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">KHAI THÁC SD NƯỚC MẶT</p>
-                                        <li class="nav-item">
-                                            <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien" class="nav-link font-13 text-dark" href="#">Thủy Điện</Link>
+                                        <li className="nav-item">
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien" className="nav-link font-13 text-dark" href="#">Thủy Điện</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link to="#" className="nav-link font-13 text-dark">Hồ Chứa</Link>
@@ -358,23 +358,23 @@ export default class QuanLyCapPhep extends React.Component {
                             <div className="col-12 d-flex align-items-center">
                                 <div className="col-2 p-0">
                                     <select className="mx-3 w-75">
-                                        <option value="2018">2018</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2020">2020</option>
+                                        <option defaultValue="2018">2018</option>
+                                        <option defaultValue="2019">2019</option>
+                                        <option defaultValue="2020">2020</option>
                                     </select>
                                 </div>
                                 <div className="col-2 p-0">
                                     <select className="mx-3 w-75">
-                                        <option value="2018">2018</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2020">2020</option>
+                                        <option defaultValue="2018">2018</option>
+                                        <option defaultValue="2019">2019</option>
+                                        <option defaultValue="2020">2020</option>
                                     </select>
                                 </div>
                                 <div className="col-2 p-0">
                                     <select className="mx-3 w-100">
-                                        <option value="2018">Mộc Châu</option>
-                                        <option value="2019">Mường La</option>
-                                        <option value="2020">Yên Châu</option>
+                                        <option defaultValue="2018">Mộc Châu</option>
+                                        <option defaultValue="2019">Mường La</option>
+                                        <option defaultValue="2020">Yên Châu</option>
                                     </select>
                                 </div>
                                 <button className="col-2 btn btn-sm btn-info d-flex align-items-center font-weight-bold ml-md-5"><SearchOutlined /> &nbsp; THỐNG KÊ </button>

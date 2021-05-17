@@ -183,40 +183,40 @@ export default class QuanLyCapPhepNuocMat extends React.Component {
                                     <div className="input-group col-3 pl-0">
                                         <select className="custom-select font-13" id="inputGroupSelect01">
                                             <option selected>-- Chọn hiệu lực --</option>
-                                            <option value="1">Còn hiệu lực</option>
-                                            <option value="2">Chưa phê duyệt</option>
-                                            <option value="3">Hết hiệu lực</option>
-                                            <option value="3">Sắp hết hiệu lực</option>
-                                            <option value="3">Hết hiệu lực chưa có GP thay thế</option>
+                                            <option defaultValue="1">Còn hiệu lực</option>
+                                            <option defaultValue="2">Chưa phê duyệt</option>
+                                            <option defaultValue="3">Hết hiệu lực</option>
+                                            <option defaultValue="3">Sắp hết hiệu lực</option>
+                                            <option defaultValue="3">Hết hiệu lực chưa có GP thay thế</option>
                                         </select>
                                     </div>
                                     <div className="input-group col-3">
                                         <select className="custom-select font-13" id="inputGroupSelect01">
                                             <option selected>-- Chọn loại công trình --</option>
-                                            <option value="1">Công trình thủy điện</option>
-                                            <option value="2">Công trình hồ chứa</option>
-                                            <option value="3">Công trình bai đập</option>
-                                            <option value="3">Công trình trạm bơm</option>
-                                            <option value="3">Công trình cống</option>
-                                            <option value="3">Công trình trạm cấp nước</option>
-                                            <option value="3">Công trình nhà máy nước</option>
+                                            <option defaultValue="1">Công trình thủy điện</option>
+                                            <option defaultValue="2">Công trình hồ chứa</option>
+                                            <option defaultValue="3">Công trình bai đập</option>
+                                            <option defaultValue="3">Công trình trạm bơm</option>
+                                            <option defaultValue="3">Công trình cống</option>
+                                            <option defaultValue="3">Công trình trạm cấp nước</option>
+                                            <option defaultValue="3">Công trình nhà máy nước</option>
                                         </select>
                                     </div>
                                     <div className="input-group col-3">
                                         <select className="custom-select font-13" id="inputGroupSelect01">
                                             <option selected>-- Sắp xếp --</option>
-                                            <option value="1">Sắp xếp theo số giấy phép</option>
-                                            <option value="2">Sắp xếp theo ngày kí</option>
-                                            <option value="3">Sắp xếp theo tên công trình</option>
-                                            <option value="3">Sắp xếp theo tên ĐVXCP</option>
-                                            <option value="3">Sắp xếp theo ngày bắt đầu hiệu lực</option>
-                                            <option value="3">Sắp xếp theo ngày kết thúc hiệu lực</option>
+                                            <option defaultValue="1">Sắp xếp theo số giấy phép</option>
+                                            <option defaultValue="2">Sắp xếp theo ngày kí</option>
+                                            <option defaultValue="3">Sắp xếp theo tên công trình</option>
+                                            <option defaultValue="3">Sắp xếp theo tên ĐVXCP</option>
+                                            <option defaultValue="3">Sắp xếp theo ngày bắt đầu hiệu lực</option>
+                                            <option defaultValue="3">Sắp xếp theo ngày kết thúc hiệu lực</option>
                                         </select>
                                     </div>
                                     <div className="input-group col-2">
                                         <select className="custom-select font-13" id="inputGroupSelect01">
                                             <option selected>Giảm dần</option>
-                                            <option value="1">Tăng dần</option>
+                                            <option defaultValue="1">Tăng dần</option>
                                         </select>
                                     </div>
                                     <button className="col-1 btn btn-info d-flex align-items-center justify-content-center">Tìm &nbsp;<SearchOutlined /></button>

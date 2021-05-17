@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../../../layout/Header';
 import Map from '../../../../layout/Map';
+import { FileImageOutlined } from '@ant-design/icons';
 
 export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.Component {
     componentDidMount(){
@@ -145,31 +146,31 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                             <th>Tuyến đập</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Cửa lấy nước</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Nhà máy thủy điện</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Cửa xả sau nhà máy</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                         <tr>
                                             <th>Công trình xả tối thiểu</th>
                                             <td></td>
                                             <td></td>
-                                            <td className="text-center"> <button type="button" className="btn btn-outline-success btn-sm">XEM</button> </td>
+                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                     </tbody>
                                 </table>

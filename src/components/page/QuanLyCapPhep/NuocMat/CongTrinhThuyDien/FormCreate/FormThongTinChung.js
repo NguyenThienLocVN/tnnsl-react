@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import React, { useState } from 'react';
-import { Steps, Button, message } from 'antd';
-import { SolutionOutlined, BankOutlined, BarChartOutlined, StarFilled, UploadOutlined, RightOutlined, LeftOutlined,SaveOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
+import { UploadOutlined } from '@ant-design/icons';
 import { Modal} from 'react-bootstrap';
 
 function ModalThanhTraKiemTra() {
@@ -139,9 +139,9 @@ export default class FormThongTinChung extends React.Component {
                                 <div className="col-sm-12">
                                     <div className="form-group">
                                         <select id="cap_tham_quyen" className="form-control form-control-sm font-13 bg-white" name="cap_tham_quyen">
-                                            <option value="0">-- Cấp thẩm quyền --</option>
-                                            <option value="1">Cấp trung ương</option>
-                                            <option value="2">Cấp địa phương</option>
+                                            <option defaultValue="0">-- Cấp thẩm quyền --</option>
+                                            <option defaultValue="1">Cấp trung ương</option>
+                                            <option defaultValue="2">Cấp địa phương</option>
                                         </select>
                                     </div>
                                 </div>
@@ -151,11 +151,11 @@ export default class FormThongTinChung extends React.Component {
                                 <div className="col-sm-12">
                                     <div className="form-group">
                                         <select id="license_type" className="form-control form-control-sm font-13 bg-white" name="license_type">
-                                            <option value="0">-- Loại hình GP --</option>
-                                            <option value="1">Cấp mới GP</option>
-                                            <option value="2">Cấp lại GP</option>
-                                            <option value="2">Gia hạn/Điều chỉhh GP</option>
-                                            <option value="2">Thu hồi GP</option>
+                                            <option defaultValue="0">-- Loại hình GP --</option>
+                                            <option defaultValue="1">Cấp mới GP</option>
+                                            <option defaultValue="2">Cấp lại GP</option>
+                                            <option defaultValue="2">Gia hạn/Điều chỉhh GP</option>
+                                            <option defaultValue="2">Thu hồi GP</option>
                                         </select>
                                     </div>
                                 </div>

@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import React, { useState } from 'react';
-import { Steps, Button, message } from 'antd';
-import { SolutionOutlined, BankOutlined, BarChartOutlined, StarFilled, UploadOutlined, RightOutlined, LeftOutlined,SaveOutlined } from '@ant-design/icons';
+import {Button, } from 'antd';
 import { Modal} from 'react-bootstrap';
 
 function ToaDoCongTrinh() {
@@ -168,7 +167,7 @@ export default class FormThongTinCongTrinh extends React.Component {
                                 <div className="col-sm-12">
                                     <div className="form-group">
                                         <select id="huyen" className="form-control form-control-sm bg-white" name="huyen">
-                                            <option value="0">-- Huyện --</option>
+                                            <option defaultValue="0">-- Huyện --</option>
                                         </select>
                                     </div>
                                 </div>
@@ -178,7 +177,7 @@ export default class FormThongTinCongTrinh extends React.Component {
                                 <div className="col-sm-12">
                                     <div className="form-group">
                                         <select id="xa" className="form-control form-control-sm bg-white" name="xa">
-                                            <option value="0">-- Xã --</option>
+                                            <option defaultValue="0">-- Xã --</option>
                                         </select>
                                     </div>
                                 </div>

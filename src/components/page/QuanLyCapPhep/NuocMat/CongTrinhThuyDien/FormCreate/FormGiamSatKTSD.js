@@ -46,8 +46,8 @@ export default class FormGiamSatKTSD extends React.Component {
                                     <td>
                                         <div className="form-group">
                                             <select  className="form-control  form-control-sm bg-white" name="don_vi">
-                                                <option value="m" className="text-center">m</option>
-                                                <option value="mm" className="text-center">mm</option>
+                                                <option defaultValue="m" className="text-center">m</option>
+                                                <option defaultValue="mm" className="text-center">mm</option>
                                             </select>
                                         </div>
                                     </td>
@@ -61,8 +61,8 @@ export default class FormGiamSatKTSD extends React.Component {
                                     <td>
                                         <div className="form-group">
                                             <select  className="form-control  form-control-sm bg-white" name="don_vi">
-                                                <option value="m" className="text-center">m</option>
-                                                <option value="mm" className="text-center">mm</option>
+                                                <option defaultValue="m" className="text-center">m</option>
+                                                <option defaultValue="mm" className="text-center">mm</option>
                                             </select>
                                         </div>
                                     </td>
@@ -76,8 +76,8 @@ export default class FormGiamSatKTSD extends React.Component {
                                     <td>
                                         <div className="form-group">
                                             <select  className="form-control  form-control-sm bg-white" name="don_vi">
-                                                <option value="m" className="text-center">m</option>
-                                                <option value="mm" className="text-center">mm</option>
+                                                <option defaultValue="m" className="text-center">m</option>
+                                                <option defaultValue="mm" className="text-center">mm</option>
                                             </select>
                                         </div>
                                     </td>
@@ -91,8 +91,8 @@ export default class FormGiamSatKTSD extends React.Component {
                                     <td>
                                         <div className="form-group">
                                             <select  className="form-control  form-control-sm bg-white" name="don_vi">
-                                                <option value="m" className="text-center">m</option>
-                                                <option value="mm" className="text-center">mm</option>
+                                                <option defaultValue="m" className="text-center">m</option>
+                                                <option defaultValue="mm" className="text-center">mm</option>
                                             </select>
                                         </div>
                                     </td>
@@ -106,8 +106,8 @@ export default class FormGiamSatKTSD extends React.Component {
                                     <td>
                                         <div className="form-group">
                                             <select  className="form-control  form-control-sm bg-white" name="don_vi">
-                                                <option value="m" className="text-center">m</option>
-                                                <option value="mm" className="text-center">mm</option>
+                                                <option defaultValue="m" className="text-center">m</option>
+                                                <option defaultValue="mm" className="text-center">mm</option>
                                             </select>
                                         </div>
                                     </td>
@@ -121,8 +121,8 @@ export default class FormGiamSatKTSD extends React.Component {
                                     <td>
                                         <div className="form-group">
                                             <select  className="form-control  form-control-sm bg-white" name="don_vi">
-                                                <option value="m" className="text-center">m</option>
-                                                <option value="mm" className="text-center">mm</option>
+                                                <option defaultValue="m" className="text-center">m</option>
+                                                <option defaultValue="mm" className="text-center">mm</option>
                                             </select>
                                         </div>
                                     </td>
@@ -136,8 +136,8 @@ export default class FormGiamSatKTSD extends React.Component {
                                     <td>
                                         <div className="form-group">
                                             <select  className="form-control  form-control-sm bg-white" name="don_vi">
-                                                <option value="m" className="text-center">m</option>
-                                                <option value="mm" className="text-center">mm</option>
+                                                <option defaultValue="m" className="text-center">m</option>
+                                                <option defaultValue="mm" className="text-center">mm</option>
                                             </select>
                                         </div>
                                     </td>

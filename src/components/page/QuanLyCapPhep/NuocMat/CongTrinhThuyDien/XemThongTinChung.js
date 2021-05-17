@@ -3,6 +3,8 @@ import Header from '../../../../layout/Header';
 import { Link } from 'react-router-dom';
 import Map from '../../../../layout/Map';
 import { Tabs } from 'antd';
+import { FolderViewOutlined } from '@ant-design/icons';
+
 const TabPane = Tabs.TabPane;
 
 export default class QuanLyCapPhepNuocMatXemThongTinThuyDien extends React.Component {
@@ -164,17 +166,17 @@ export default class QuanLyCapPhepNuocMatXemThongTinThuyDien extends React.Compo
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
                                                 <div className="col-lg-1">1</div>
                                                 <div className="col-lg-5">Tên tài liệu 1</div>
-                                                <div className="col-lg-6"> <button type="button" className="btn btn-sm btn-outline-primary">Xem Tài Liệu</button> </div>
+                                                <div className="col-lg-6"> <button type="button" className="btn btn-sm d-flex align-items-center btn-outline-primary"> < FolderViewOutlined className="mx-2" /> Xem Tài Liệu</button> </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
                                                 <div className="col-lg-1">2</div>
                                                 <div className="col-lg-5">Tên tài liệu 2</div>
-                                                <div className="col-lg-6"> <button type="button" className="btn btn-sm btn-outline-primary">Xem Tài Liệu</button> </div>
+                                                <div className="col-lg-6"> <button type="button" className="btn btn-sm d-flex align-items-center btn-outline-primary"> < FolderViewOutlined className="mx-2" /> Xem Tài Liệu</button> </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
                                                 <div className="col-lg-1">3</div>
                                                 <div className="col-lg-5">Tên tài liệu 3</div>
-                                                <div className="col-lg-6"> <button type="button" className="btn btn-sm btn-outline-primary">Xem Tài Liệu</button> </div>
+                                                <div className="col-lg-6"> <button type="button" className="btn btn-sm d-flex align-items-center btn-outline-primary"> < FolderViewOutlined className="mx-2" /> Xem Tài Liệu</button> </div>
                                             </div>
                                         </div>
                                     </TabPane>

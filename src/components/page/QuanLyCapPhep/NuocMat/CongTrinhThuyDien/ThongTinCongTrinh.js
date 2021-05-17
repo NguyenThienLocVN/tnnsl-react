@@ -89,18 +89,6 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
                                                     <div className="col-lg-12 font-weight-bold">Phương thức khai thác: </div>
                                                     <div className="col-lg-12">Bằng công trình với các thông số như trong hồ sơ thiết kế đã được cấp có thẩm quyền phê duyệt nộp kèm theo Đề án khai thác, sử dụng nước. </div>
                                                 </div>
-                                                <div className="row mx-0 py-2 col-lg4 border-bottom px-0">
-                                                    <div className="col-lg-7 font-weight-bold">Loại kinh tuyến trục: </div>
-                                                    <div className="col-lg-5">Địa phương </div>
-                                                </div>
-                                                <div className="row mx-0 py-2 col-lg-4 border-bottom px-0">
-                                                    <div className="col-lg-7 font-weight-bold">Kinh tuyến trục (VN2000): </div>
-                                                    <div className="col-lg-5">104o0' - Tỉnh Sơn La </div>
-                                                </div>
-                                                <div className="row mx-0 py-2 col-lg-4 border-bottom px-0">
-                                                    <div className="col-lg-7 font-weight-bold">Múi chiếu: </div>
-                                                    <div className="col-lg-5">3 độ </div>
-                                                </div>
                                                 <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
                                                     <div className="col-lg-12 font-weight-bold">Năm sử dụng: </div>
                                                     <div className="col-lg-12">20/02/2020 </div>
