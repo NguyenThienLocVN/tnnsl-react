@@ -174,7 +174,7 @@ export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
                             <button className="col-11 btn btn-info d-flex align-items-center mx-auto mt-1"><InfoCircleOutlined /> &nbsp; Hướng dẫn sử dụng</button>
                         </div>
                     </div>
-                    <div className="menu-home col-12 col-lg-9 discharge-water">
+                    <div className="menu-home col-12 p-0 col-lg-9 discharge-water">
                         <div className="col-12 px-md-1 vh-50">
                             <Map className="col-12" />
 
