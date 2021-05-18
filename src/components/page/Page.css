@@ -92,6 +92,24 @@
     font-weight: bold;
 }
 
+.ant-steps-item-container{
+    
+    display: flex;
+    align-items: center;
+}
+
+.ant-steps-vertical > .ant-steps-item .ant-steps-item-content {
+    display: flex !important;
+    align-items: center;
+}
+.ant-steps-vertical > .ant-steps-item .ant-steps-item-icon{
+    margin: 0 16px;
+}
+
+.report-item{
+    height: 100px;
+}
+
 @media screen and (min-width: 768px){
     .top-bar { height: 35px; line-height: 35px; }
     #dams-num { left: 46px; top: 17px; }

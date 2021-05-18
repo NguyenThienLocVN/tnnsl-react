@@ -15,12 +15,13 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
     componentDidMount(){
         document.title = "Quản lý cấp phép | Giám sát tài nguyên nước Sơn La";
     }
+    
 
     render(){
         const { mode } = this.state;
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | XEM THÔNG TIN CÔNG TRÌNH" previousLink="/quan-ly-cap-phep/nuoc-mat" showHeadImage={true} />
+                <Header headTitle="THỦY ĐIỆN | THÔNG TIN CÔNG TRÌNH" previousLink="/quan-ly-cap-phep" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <div className="col-lg-2    ">
@@ -38,8 +39,11 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
                                     <Map className="col-12" />
                                 </div>
                                 <div className="col-12 px-0">
-                                    <Tabs className="col-12" defaultActiveKey="1" tabPosition={ mode }>
-                                        <TabPane tab="Thông tin chung" key="1">
+                                        <div className="row mx-0">
+                                            <div className="py-2 px-3 text-primary border-bottom border-primary">Thông tin chung</div>
+                                            <Link className="py-2 px-3 text-primary" to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh/chi-tiet">Thông tin chi tiết</Link>
+                                        </div>
+                                        <div tab="Thông tin chung" key="1">
                                             <div className="row mx-0 col-lg-12 px-0 infomation_table pb-5">
                                                 <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
                                                     <div className="col-lg-4 font-weight-bold">Tên công trình: </div>
@@ -98,9 +102,8 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
                                                     <div className="col-lg-12">Nội dung ghi chú </div>
                                                 </div>
                                             </div>
-                                        </TabPane>
-                                        <TabPane tab={<Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh/chi-tiet">Thông tin chi tiết</Link>} key="2"></TabPane>
-                                    </Tabs>
+                                        </div>
+                                        
                                 </div>
                             </div>
                         </div>

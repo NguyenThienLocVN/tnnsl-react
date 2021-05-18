@@ -12,7 +12,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
     render(){
         return(
             <div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | HỒ SƠ CẤP PHÉP" previousLink="/quan-ly-cap-phep/nuoc-mat" showHeadImage={true} />
+                <Header headTitle="THỦY ĐIỆN | HỒ SƠ CẤP PHÉP" previousLink="/quan-ly-cap-phep" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <div className="col-lg-2    ">

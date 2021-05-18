@@ -87,7 +87,7 @@ export default class Login extends React.Component{
                     <Alert className="mt-3" message={this.state.msg} type="error" showIcon /> : "" }
     
                     <div className="text-center d-flex mt-3">
-                        <input type="submit" className="col-5 btn font-13 button-login text-white" defaultValue="Đăng nhập" />
+                        <input type="submit" className="col-5 btn font-13 button-login text-white" value="Đăng nhập" />
     
                         <Link to="register" className="btn font-13 col-6">Đăng ký</Link>
                     </div>

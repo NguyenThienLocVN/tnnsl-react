@@ -225,7 +225,7 @@ export default class QuanLyCapPhep extends React.Component {
                                 </ul>
                             </div>
                             <div className="col-lg-7 p-0">
-                                <Link to="/quan-ly-cap-phep/nuoc-mat" className="d-block col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-info">
+                                <div className="d-block col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-info">
                                     <p className="bg-sw-title-box rounded mb-2 p-2 font-weight font-weight-bold text-center">NƯỚC MẶT</p>
                                     <div className="font-weight-bold col-12 d-flex">
                                         <p className="col-9">Giấy phép: </p>
@@ -247,7 +247,7 @@ export default class QuanLyCapPhep extends React.Component {
                                         <p className="col-9">Chưa có GP thay thế: </p>
                                         <p className="col-3">100</p>
                                     </div>
-                                </Link>
+                                </div>
 
                                 <div className="col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-success">
                                     <p className="bg-ww-title-box rounded mb-2 p-2 font-weight-bold text-center">XẢ THẢI VÀO NGUỒN NƯỚC</p>
@@ -350,34 +350,35 @@ export default class QuanLyCapPhep extends React.Component {
                     <div className="col-12 col-lg-7 menu-home px-md-1">
                         <div className="qlcp-chart col-12 p-0 mt-3 card">
                             <div className="card-header">Số lượng giấy phép công trình được cấp theo năm</div>
-                            <div className="col-12 d-flex pt-2">
-                                <span className="col-2 font-weight-bold">Từ :</span>
-                                <span className="col-2 font-weight-bold">Đến :</span>
-                                <span className="col-2 font-weight-bold">Huyện :</span>
-                            </div>
-                            <div className="col-12 d-flex align-items-center">
-                                <div className="col-2 p-0">
+                            <div className="col-12 row mx-0 pt-2">
+                                <div className="col-12 col-md-3 mb-2">
+                                    <span className="col-12 col-lg-2 font-weight-bold">Từ :</span>
                                     <select className="mx-3 w-75">
                                         <option defaultValue="2018">2018</option>
                                         <option defaultValue="2019">2019</option>
                                         <option defaultValue="2020">2020</option>
                                     </select>
                                 </div>
-                                <div className="col-2 p-0">
+                                <div className="col-12 col-md-3 mb-2">
+                                    <span className="col-12 col-lg-2 font-weight-bold">Đến :</span>
                                     <select className="mx-3 w-75">
                                         <option defaultValue="2018">2018</option>
                                         <option defaultValue="2019">2019</option>
                                         <option defaultValue="2020">2020</option>
                                     </select>
                                 </div>
-                                <div className="col-2 p-0">
-                                    <select className="mx-3 w-100">
-                                        <option defaultValue="2018">Mộc Châu</option>
-                                        <option defaultValue="2019">Mường La</option>
-                                        <option defaultValue="2020">Yên Châu</option>
+                                <div className="col-12 col-md-3 mb-2">
+                                    <span className="col-12 col-lg-2 font-weight-bold">Huyện :</span>
+                                    <select className="mx-3 w-75">
+                                        <option defaultValue="2018">2018</option>
+                                        <option defaultValue="2019">2019</option>
+                                        <option defaultValue="2020">2020</option>
                                     </select>
                                 </div>
-                                <button className="col-2 btn btn-sm btn-info d-flex align-items-center font-weight-bold ml-md-5"><SearchOutlined /> &nbsp; THỐNG KÊ </button>
+                                <div className="col-md-3">
+                                    <button className="btn btn-sm btn-info d-flex align-items-center font-weight-bold mx-auto"><SearchOutlined /> &nbsp; THỐNG KÊ </button>
+                                </div>
+                                
                             </div>
                             <div className="card-body">
                                 <Bar height={350} width={75} data={this.state.barChartData} options={chartOptions} />
@@ -385,8 +386,8 @@ export default class QuanLyCapPhep extends React.Component {
                         </div>
 
                         <div className="qlcp-chart col-12 p-0 mt-3 card">
-                            <div className="card-body col-12 d-flex">
-                                <div className="col-3 p-0">
+                            <div className="card-body col-12 row mx-0">
+                                <div className="col-12 col-md-3 p-0">
                                     <div className="form-group">
                                         <label className="font-weight-bold m-0">Biểu đồ:</label>
                                         <input type="text" className="form-control" />
@@ -412,7 +413,7 @@ export default class QuanLyCapPhep extends React.Component {
                                         <button className="col-6 btn btn-sm btn-primary d-flex align-items-center justify-content-center"><LineChartOutlined />&nbsp; Thống kê</button>
                                     </div>
                                 </div>
-                                <div className="col-9">
+                                <div className="col-md-9 col-12">
                                     <Doughnut data={this.state.doughnutData} options={doughnutOptions} />
                                 </div>
                             </div>
