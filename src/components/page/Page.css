@@ -9,7 +9,7 @@
     overflow-y: auto;
 }
 
-.banner-tnmt { height: 130px; }
+.banner-tnmt { height: 65px; }
 
 .map-container {
     height: calc(100vh - 169px);
@@ -109,12 +109,17 @@
 .report-item{
     height: 100px;
 }
+.report-item-four{
+    height: 100%;
+}
 
 @media screen and (min-width: 768px){
     .top-bar { height: 35px; line-height: 35px; }
     #dams-num { left: 46px; top: 17px; }
     #slash { top: 21px; left: 65px; }
     #total-dams { top: 25px; left: 70px; }
+    .banner-tnmt { height: 130px; }
+    .report-item-four{height: unset;}
 }
 
 @media screen and (min-width: 1024px){
