@@ -85,6 +85,9 @@
 .hydroelectric-icon { width: 65px; height: 65px; }
 .hydroelectric-sub-icon { width: 45px; height: 45px; }
 
+.ant-table-tbody > tr > th { padding: 5px 6px !important; }
+.ant-table-tbody > tr > td { padding: 6px !important; cursor: pointer; font-size: 13px; }
+.table-icon { width: 15px; height: 15px; }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #1874bd !important;

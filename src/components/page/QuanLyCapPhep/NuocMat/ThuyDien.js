@@ -2,15 +2,9 @@ import React from 'react';
 import Header from '../../../layout/Header';
 import { Link } from 'react-router-dom';
 import Map from '../../../layout/Map';
-import { InfoCircleOutlined, PlusOutlined, FileExcelOutlined, SearchOutlined } from '@ant-design/icons';
+import { InfoCircleOutlined, EyeOutlined, PlusOutlined, FileExcelOutlined, SearchOutlined, EditOutlined, DeleteOutlined, FileOutlined } from '@ant-design/icons';
+
 import { Table, Tag } from 'antd';
-
-const Step1Form = () => {
-    <>
-        <div className="exploit-surfacewater">ok</div>
-    </>
-}
-
 
 export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
     constructor(props)
@@ -26,7 +20,6 @@ export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
                 {
                   title: 'Số giấy phép',
                   dataIndex: 'so_giay_phep',
-                //   render: (text, id) => <Link onClick={this.RedirectToXemThongTinChung(id)} to={id}>{text}</Link>,
                 },
                 {
                   title: 'Ngày ký',
@@ -83,29 +76,31 @@ export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
                 },
                 {
                     title: 'Thao tác',
-                    content: <Step1Form />
+                    dataIndex: 'thao_tac',
                 }
             ],
             data : [
                 {
                   id: '1',
-                  so_giay_phep: '482/GP-BTNMT',
+                  so_giay_phep: <p title="Xem file giấy phép" className="text-primary m-0">482/GP-BTNMT &nbsp; <FileOutlined /> </p>,
                   ngay_ky: '11/05/2021',
-                  ten_cong_trinh: 'Thủy điện Sơ Vin',
+                  ten_cong_trinh: <p title="Xem bản đồ" className="text-primary m-0">Thủy điện Sơ Vin <img  src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/earth.png'} alt="earth" className="table-icon" /></p>,
                   ten_to_chuc: 'Công ty A',
                   ngay_hieu_luc: '12/05/2021',
                   thoi_han: 10,
-                  trang_thai: ['1']
+                  trang_thai: ['1'],
+                  thao_tac: <div><Link title="Xem GP" to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung"><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
                 },
                 {
                   id: '2',
-                  so_giay_phep: '773/GP-BTNMT',
+                  so_giay_phep: <p title="Xem file giấy phép" className="text-primary m-0">773/GP-BTNMT &nbsp; <FileOutlined /> </p>,
                   ngay_ky: '04/05/2021',
-                  ten_cong_trinh: 'Thủy điện Nậm Pia',
+                  ten_cong_trinh: <p title="Xem bản đồ" className="text-primary m-0">Thủy điện Nậm Pia <img  src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/earth.png'} alt="earth" className="table-icon" /></p>,
                   ten_to_chuc: 'Công ty B',
                   ngay_hieu_luc: '11/05/2021',
                   thoi_han: 10,
-                  trang_thai: ['2']
+                  trang_thai: ['2'],
+                  thao_tac: <div><Link title="Xem GP" to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung"><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
                 }
             ]
         }
@@ -113,10 +108,6 @@ export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
 
     componentDidMount(){
         document.title = "Quản lý cấp phép nước mặt | Thủy điện | Giám sát tài nguyên nước Sơn La";
-    }
-
-    RedirectToXemThongTinChung(id){
-        return this.props.history.push('/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung/'+id);
     }
 
     render(){
