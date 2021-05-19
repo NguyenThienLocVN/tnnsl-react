@@ -284,13 +284,13 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-sm-5 px-0 vh-100">
-                                    <Map className="col-12 vh-100" />
+                                <div className="col-sm-5 px-0">
+                                    <Map className="col-12 h-100" />
                                 </div>  
                                 <div className="col-sm-12 px-0">
                                     <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight-bold text-left">Số liệu vận hành</p>
                                         <div>
-                                            <table className="table table-hover w-100 table-bordered table-responsive">
+                                            <table className="table table-hover mx-auto table-bordered table-responsive">
                                                 <thead className="thead-inverse">
                                                     <tr>
                                                         <th className="align-middle text-center font-13 " rowSpan="2">LVH/HỒ CHỨA</th>

@@ -80,57 +80,57 @@ export default class QuanLyCapPhepNuocMatChatLuongNuocMat extends React.Componen
                                             </tr>
                                             <tr className="text-center align-middle">
                                                 <td className="p-1">2</td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
+                                                <td className="p-1">BOD₅(20⁰C)</td>
+                                                <td className="p-1"> mg/l </td>
+                                                <td className="p-1">  4 </td>
+                                                <td className="p-1">  6 </td>
+                                                <td className="p-1">  15 </td>
+                                                <td className="p-1">  25 </td>
                                             </tr>
                                             <tr className="text-center align-middle">
                                                 <td className="p-1">3</td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
+                                                <td className="p-1"> COD </td>
+                                                <td className="p-1"> mg/l </td>
+                                                <td className="p-1"> 10 </td>
+                                                <td className="p-1"> 15 </td>
+                                                <td className="p-1"> 30 </td>
+                                                <td className="p-1"> 50 </td>
                                             </tr>
                                             <tr className="text-center align-middle">
                                                 <td className="p-1">4</td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
+                                                <td className="p-1"> Oxy hòa tan(DO) </td>
+                                                <td className="p-1"> mg/l </td>
+                                                <td className="p-1"> ≥6 </td>
+                                                <td className="p-1"> ≥5 </td>
+                                                <td className="p-1"> ≥4 </td>
+                                                <td className="p-1"> ≥2 </td>
                                             </tr>
                                             <tr className="text-center align-middle">
                                                 <td className="p-1">5</td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
+                                                <td className="p-1"> Tổng chất rawsnlow lửng (TSS) </td>
+                                                <td className="p-1"> mg/l </td>
+                                                <td className="p-1"> 20 </td>
+                                                <td className="p-1"> 30 </td>
+                                                <td className="p-1"> 50 </td>
+                                                <td className="p-1"> 100 </td>
                                             </tr>
                                             <tr className="text-center align-middle">
                                                 <td className="p-1">6</td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
+                                                <td className="p-1"> Amoni(NH₄⋅ Tính theo N) </td>
+                                                <td className="p-1"> mg/l </td>
+                                                <td className="p-1"> 0.3 </td>
+                                                <td className="p-1"> 0.3 </td>
+                                                <td className="p-1"> 0.9 </td>
+                                                <td className="p-1"> 0.9 </td>
                                             </tr>
                                             <tr className="text-center align-middle">
                                                 <td className="p-1">7</td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
-                                                <td className="p-1"></td>
+                                                <td className="p-1"> Clorua(CL-) </td>
+                                                <td className="p-1"> mg/l </td>
+                                                <td className="p-1"> 250 </td>
+                                                <td className="p-1"> 350 </td>
+                                                <td className="p-1"> 350 </td>
+                                                <td className="p-1"> -- </td>
                                             </tr>
                                         </tbody>
                                     </table>
