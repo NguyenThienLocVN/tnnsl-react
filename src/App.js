@@ -20,7 +20,7 @@ import QuanLyCapPhepNuocMatHoSoCapPhep from './components/page/QuanLyCapPhep/Nuo
 // import Gioi thieu chung pages
 import GioiThieuChung from './components/page/GioiThieuChung/GioiThieuChung';
 
-
+import HeThongGiamSat from './components/page/HeThongGiamSat/HeThongGiamSat';
 
 import BaoCaoBieuMau from './components/page/BaoCaoBieuMau/BaoCaoBieuMau';
 
@@ -48,11 +48,10 @@ function App() {
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat/thuy-dien/chat-luong-nuoc-mat" component={QuanLyCapPhepNuocMatChatLuongNuocMat} />
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat/thuy-dien/ho-so-cap-phep" component={QuanLyCapPhepNuocMatHoSoCapPhep} />
 
-				{/* Ho Chua */}
-				{/* <Route exact path="/quan-ly-cap-phep/nuoc-mat/ho-chua" component={QuanLyCapPhepNuocMatHoChua} /> */}
-
 				{/* Gioi thieu chung */}
 				<Route exact path="/gioi-thieu-chung" component={GioiThieuChung} />
+
+				<Route exact path="/he-thong-giam-sat" component={HeThongGiamSat} />
 
 				{/* Bao Cao Bieu Mau */}
 				<Route exact path="/bao-cao-bieu-mau" component={BaoCaoBieuMau} />

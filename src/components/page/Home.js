@@ -82,7 +82,7 @@ export default class Login extends React.Component {
                         </div>
                         <div className="d-flex flex-column flex-md-row flex-lg-column">
                             <div className="col-12 col-md-6 col-lg-12 px-0 pt-3 pb-0 d-flex">
-                                <Link to="#" className="col-6 text-center">
+                                <Link to="/he-thong-giam-sat" className="col-6 text-center">
                                     <img className="grid-item-image" src={process.env.PUBLIC_URL + '/images/TRANG_CHU/ANH_HETHONGGIAMSAT.png'} alt="he-thong-giam-sat" />
                                     <p className="grid-item-text font-weight-bold">Hệ thống giám sát</p>
                                 </Link>
