@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../layout/Header';
 import { Link } from 'react-router-dom';
-import { SearchOutlined, DownloadOutlined, LineChartOutlined } from '@ant-design/icons';
+import { SearchOutlined, DownloadOutlined, LineChartOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import { Bar, Doughnut } from 'react-chartjs-2';
 
 export default class QuanLyCapPhep extends React.Component {
@@ -156,77 +156,78 @@ export default class QuanLyCapPhep extends React.Component {
                         <div className="row m-0">
                             <div className="col-lg-12 p-0">
                                 <ul className="nav flex-column nav-pills pl-2 pb-1 mx-auto my-3 rounded">
-                                    <div className="exploit-surfacewater">
-                                        <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">KHAI THÁC SD NƯỚC MẶT</p>
+                                    <div className="">
+                                        <p className="btn btn-outline-dark col-11 font-13 btn-sm d-flex justify-content-center align-items-center font-weight-bold"> <InfoCircleOutlined className="mx-1" /> GIỚI THIỆU CHUNG</p>
+                                        <p className="exploit-surfacewater-title mb-2 p-2 font-weight-bold text-left">KHAI THÁC SD NƯỚC MẶT</p>
                                         <li className="nav-item">
-                                            <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien" className="nav-link font-13 text-dark" href="#">Thủy Điện</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien" className="nav-link font-13 text-dark hover-link" href="#">Thủy Điện</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Hồ Chứa</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Hồ Chứa</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Trạm Bơm</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Trạm Bơm</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Đập / Hệ Thống Thủy Lợi</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Đập / Hệ Thống Thủy Lợi</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Cống</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Cống</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Trạm Cấp Nước</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Trạm Cấp Nước</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Nhà Máy Nước</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Nhà Máy Nước</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Công Trình Khác</Link>
-                                        </li>
-                                    </div>
-                                    <div className="exploit-surfacewater">
-                                        <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">KHAI THÁC SỬ DỤNG NDĐ</p>
-                                        <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Khai Thác</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Thăm Dò</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Hành Nghề Khoan</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Công Trình Khác</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                     <div className="exploit-surfacewater">
-                                        <p className="exploit-surfacewater-title mb-2 p-2 font-weight font-weight-bold text-left">XẢ THẢI VÀO NN</p>
+                                        <p className="exploit-surfacewater-title mb-2 p-2 font-weight-bold text-left">KHAI THÁC SỬ DỤNG NDĐ</p>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Khu / Cụm CN  Tập Trung</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Khai Thác</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">SX Tiểu Thủ CN</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Thăm Dò</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">SX KD Dịch Vụ</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Hành Nghề Khoan</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">CS Bệnh Viện</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Công Trình Khác</Link>
+                                        </li>
+                                    </div>
+                                    <div className="exploit-surfacewater">
+                                        <p className="exploit-surfacewater-title mb-2 p-2 font-weight-bold text-left">XẢ THẢI VÀO NN</p>
+                                        <li className="nav-item">
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Khu / Cụm CN  Tập Trung</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Khu Dân Cư / Làng Nghề</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">SX Tiểu Thủ CN</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Chăn Nuôi / NTTS</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">SX KD Dịch Vụ</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark">Công Trình Khác</Link>
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">CS Bệnh Viện</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Khu Dân Cư / Làng Nghề</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Chăn Nuôi / NTTS</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-8 menu-home px-md-1">
+                    <div className="col-12 col-lg-7 menu-home px-md-1">
                         <div className="qlcp-chart col-12 p-0 mt-3 card">
                             <div className="card-header">Số lượng giấy phép công trình được cấp theo năm</div>
                             <div className="col-12 row mx-0 pt-2">
@@ -254,7 +255,7 @@ export default class QuanLyCapPhep extends React.Component {
                                         <option defaultValue="2020">2020</option>
                                     </select>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-md-3 d-flex align-items-center">
                                     <button className="btn btn-sm btn-info d-flex align-items-center font-weight-bold mx-auto"><SearchOutlined /> &nbsp; THỐNG KÊ </button>
                                 </div>
                                 
@@ -298,29 +299,29 @@ export default class QuanLyCapPhep extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-2 px-0 menu-home">
+                    <div className="col-12 col-lg-3 px-0 menu-home">
                         <div className="row m-0">
                             <div className="col-lg-12 p-0">
                                 <div className="d-block col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-info">
-                                    <p className="bg-sw-title-box rounded mb-2 p-2 font-weight font-weight-bold text-center">NƯỚC MẶT</p>
+                                    <p className="bg-sw-title-box rounded mb-2 p-2 font-weight-bold text-center">NƯỚC MẶT</p>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Giấy phép: </p>
+                                        <p className="col-9 px-sm-0 font-13">Giấy phép: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Sắp hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Sắp hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa phê duyệt: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa phê duyệt: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa có GP thay thế: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa có GP thay thế: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                 </div>
@@ -328,23 +329,23 @@ export default class QuanLyCapPhep extends React.Component {
                                 <div className="col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-success">
                                     <p className="bg-ww-title-box rounded mb-2 p-2 font-weight-bold text-center">XẢ THẢI VÀO NGUỒN NƯỚC</p>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Giấy phép: </p>
+                                        <p className="col-9 px-sm-0 font-13">Giấy phép: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Sắp hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Sắp hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa phê duyệt: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa phê duyệt: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa có GP thay thế: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa có GP thay thế: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                 </div>
@@ -352,23 +353,23 @@ export default class QuanLyCapPhep extends React.Component {
                                 <div className="col-11 pb-1 mx-auto my-3 rounded text-dark px-0 bg-warning">
                                     <p className="bg-euw-title-box rounded mb-2 p-2 font-weight-bold text-center">KHAI THÁC NƯỚC DƯỚI ĐẤT</p>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Giấy phép: </p>
+                                        <p className="col-9 px-sm-0 font-13">Giấy phép: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Sắp hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Sắp hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa phê duyệt: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa phê duyệt: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa có GP thay thế: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa có GP thay thế: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                 </div>
@@ -376,23 +377,23 @@ export default class QuanLyCapPhep extends React.Component {
                                 <div className="col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-danger">
                                     <p className="bg-uwe-title-box rounded mb-2 p-2 font-weight-bold text-center">THĂM DÒ NƯỚC DƯỚI ĐẤT</p>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Giấy phép: </p>
+                                        <p className="col-9 px-sm-0 font-13">Giấy phép: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Sắp hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Sắp hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa phê duyệt: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa phê duyệt: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa có GP thay thế: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa có GP thay thế: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                 </div>
@@ -400,23 +401,23 @@ export default class QuanLyCapPhep extends React.Component {
                                 <div className="col-11 pb-1 mx-auto my-3 rounded text-white px-0 bg-secondary">
                                     <p className="bg-practise-title-box rounded mb-2 p-2 font-weight-bold text-center">HÀNH NGHỀ</p>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Giấy phép: </p>
+                                        <p className="col-9 px-sm-0 font-13">Giấy phép: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Sắp hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Sắp hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Hết hiệu lực: </p>
+                                        <p className="col-9 px-sm-0 font-13">Hết hiệu lực: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa phê duyệt: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa phê duyệt: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                     <div className="font-weight-bold col-12 d-flex">
-                                        <p className="col-9 px-sm-0">Chưa có GP thay thế: </p>
+                                        <p className="col-9 px-sm-0 font-13">Chưa có GP thay thế: </p>
                                         <p className="col-3">1000</p>
                                     </div>
                                 </div>

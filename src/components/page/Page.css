@@ -56,6 +56,8 @@
     background: #2f80ed33;
 }
 
+.hover-link:hover{background-color: lightsalmon; font-weight: bold;}
+
 #surfacewater-usage { overflow-y: auto; height: calc(100vh - 156px);
 }
 
@@ -121,6 +123,9 @@
     width: 95px;
     height: 65px;
 }
+
+/* He thong giam sat */
+.hover-bg:hover{background-color: lightgray; transition-duration: 500ms;}
 
 @media screen and (min-width: 768px){
     .top-bar { height: 35px; line-height: 35px; }

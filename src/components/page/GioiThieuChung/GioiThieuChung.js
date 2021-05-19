@@ -25,7 +25,7 @@ export default class Login extends React.Component {
             <div className="pt-1 px-1">
                 <Header headTitle="GIỚI THIỆU CHUNG" previousLink="/" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
-                    <div className="col-12 col-lg-4 px-0 menu-home discharge-water">
+                    <div className="col-12 col-lg-4 menu-home discharge-water">
                         <Link to="#" className="d-flex align-items-center text-success mt-2 border">
                             <img className="introduce-image" src={process.env.PUBLIC_URL + '/images/TRANG_CHU/ANH_HETHONGQUANTRAC.png'} alt="thong-tin-chung" />
                             <b className="pl-2 introduct-text">GIỚI THIỆU HỆ THỐNG QUẢN LÝ QUAN TRẮC</b>
