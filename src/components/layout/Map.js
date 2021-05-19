@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, LayersControl } from 'react-leaflet'
 import L from 'leaflet';
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -24,15 +24,20 @@ export default class Map extends React.Component {
 
         return(
 			<MapContainer className="h-100 w-100 position-relative" center={position} zoom={this.state.zoom}>
-				<TileLayer
-				attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-				/>
-				<Marker position={[51.505, -0.09]}>
-				<Popup>
-					A pretty CSS3 popup. <br /> Easily customizable.
-				</Popup>
-				</Marker>
+				<LayersControl position="topright">
+					<LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
+						<TileLayer
+						attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+						url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+						/>
+					</LayersControl.BaseLayer>
+					<LayersControl.BaseLayer name="OpenStreetMap.BlackAndWhite">
+						<TileLayer
+						attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+						url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+						/>
+					</LayersControl.BaseLayer>
+				</LayersControl>
 			</MapContainer>
 			
         )
