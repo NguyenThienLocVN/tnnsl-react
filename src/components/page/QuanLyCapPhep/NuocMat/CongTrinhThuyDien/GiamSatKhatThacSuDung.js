@@ -69,18 +69,12 @@ function CapNhatSoLieuVanHanh() {
 }
 
 export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          mode: 'top',
-        };
-      }
+    
     componentDidMount(){
         document.title = "Quản lý cấp phép | Giám sát tài nguyên nước Sơn La";
     }
 
     render(){
-        const { mode } = this.state;
         return(
 			<div className="p-0">
                 <Header headTitle="THỦY ĐIỆN | GIÁM SÁT KTSD" previousLink="/quan-ly-cap-phep/nuoc-mat/thuy-dien" showHeadImage={true} />
@@ -233,10 +227,10 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                             <div className="col-12 px-0 font-weight-bold text-13">
                                                                 <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" /> <span>có</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>có</span>
                                                                     </div>
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" /> <span>không</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>không</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -253,10 +247,10 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                             <div className="col-12 px-0 font-weight-bold text-13">
                                                                 <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" /> <span>có</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>có</span>
                                                                     </div>
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" /> <span>không</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>không</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -273,10 +267,10 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                             <div className="col-12 px-0 font-weight-bold text-13">
                                                                 <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" /> <span>có</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>có</span>
                                                                     </div>
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" /> <span>không</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>không</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -293,48 +287,48 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                 <div className="col-sm-5 px-0 vh-100">
                                     <Map className="col-12 vh-100" />
                                 </div>  
-                                <div className="col-sm-12">
-                                    <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight-bold text-left">Só liệu vận hành</p>
+                                <div className="col-sm-12 px-0">
+                                    <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight-bold text-left">Số liệu vận hành</p>
                                         <div>
                                             <table className="table table-hover w-100 table-bordered table-responsive">
                                                 <thead className="thead-inverse">
                                                     <tr>
-                                                        <th className="font-13" rowSpan="2">LVH/HỒ CHỨA</th>
-                                                        <th className="font-13" colSpan="3">TỔNG LƯỢNG XẢ(TRIỆU m3)</th>
-                                                        <th className="font-13" colSpan="3">SỐ NGÀY VẬN HÀNH KHÔNG ĐÚNG YÊU CẦU(NGÀY)</th>
+                                                        <th className="align-middle text-center font-13 " rowSpan="2">LVH/HỒ CHỨA</th>
+                                                        <th className="font-13 align-middle text-center" colSpan="3">TỔNG LƯỢNG XẢ(TRIỆU m3)</th>
+                                                        <th className="font-13 align-middle text-center" colSpan="3">SỐ NGÀY VẬN HÀNH KHÔNG ĐÚNG YÊU CẦU(NGÀY)</th>
                                                     </tr>
-                                                    <tr className="font-13">
-                                                        <th className="font-13">YÊU CẦU</th>
-                                                        <th className="font-13">THỰC TẾ</th>
-                                                        <th className="font-13">+/-</th>
-                                                        <th className="font-13">LƯU LƯỢNG XẢ</th>
-                                                        <th className="font-13">DÒNG CHẢY TỐI THIỂU</th>
-                                                        <th className="font-13">THỜI GIAN XẢ</th>
+                                                    <tr>
+                                                        <th className="font-13 align-middle text-center">YÊU CẦU</th>
+                                                        <th className="font-13 align-middle text-center">THỰC TẾ</th>
+                                                        <th className="font-13 align-middle text-center">+/-</th>
+                                                        <th className="font-13 align-middle text-center">LƯU LƯỢNG XẢ</th>
+                                                        <th className="font-13 align-middle text-center">DÒNG CHẢY TỐI THIỂU</th>
+                                                        <th className="font-13 align-middle text-center">THỜI GIAN XẢ</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr className="font-13">
-                                                            <th className="font-13" scope="row">TỔNG CỘNG TẤT CẢ LVS: 302</th>
-                                                            <th className="font-13">3200</th>
-                                                            <th className="font-13">3200</th>
-                                                            <th className="font-13">3200</th>
-                                                            <th className="font-13">50</th>
-                                                            <th className="font-13">50</th>
-                                                            <th className="font-13">50</th>
+                                                        <tr>
+                                                            <th className="font-13 align-middle text-center">TỔNG CỘNG TẤT CẢ LVS: 302</th>
+                                                            <th className="font-13 align-middle text-center">3200</th>
+                                                            <th className="font-13 align-middle text-center">3200</th>
+                                                            <th className="font-13 align-middle text-center">3200</th>
+                                                            <th className="font-13 align-middle text-center">50</th>
+                                                            <th className="font-13 align-middle text-center">50</th>
+                                                            <th className="font-13 align-middle text-center">50</th>
                                                         </tr>
-                                                        <tr className="font-13">
-                                                            <td className="font-13" scope="row">Suối lắp 1 
+                                                        <tr>
+                                                            <td className="font-13 align-middle">Suối lắp 1 
                                                                 <div className="float-right font-14 d-flex text-primary"> 
                                                                     <div className="mx-1"><TongHopHoChua /></div>
                                                                     <div className="mx-1"><CapNhatSoLieuVanHanh /> </div>
                                                                 </div>
                                                             </td>
-                                                            <td className="font-13">0</td>
-                                                            <td className="font-13">1.3</td>
-                                                            <td className="font-13">1.3</td>
-                                                            <td className="font-13">0</td>
-                                                            <td className="font-13">0</td>
-                                                            <td className="font-13">__</td>
+                                                            <td className="font-13 align-middle text-center">0</td>
+                                                            <td className="font-13 align-middle text-center">1.3</td>
+                                                            <td className="font-13 align-middle text-center">1.3</td>
+                                                            <td className="font-13 align-middle text-center">0</td>
+                                                            <td className="font-13 align-middle text-center">0</td>
+                                                            <td className="font-13 align-middle text-center">__</td>
                                                         </tr>
                                                     </tbody>
                                             </table>
