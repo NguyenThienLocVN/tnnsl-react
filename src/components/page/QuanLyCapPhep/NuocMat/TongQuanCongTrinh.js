@@ -6,11 +6,12 @@ import { InfoCircleOutlined, EyeOutlined, PlusOutlined, FileExcelOutlined, Searc
 
 import { Table, Tag } from 'antd';
 
-export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
+export default class QuanLyCapPhepNuocMatTongQuanCongTrinh extends React.Component {
     constructor(props)
     {
         super(props)
         this.state = {
+            pagename: this.props.match.params.pagename,
             showSearch: false,
             columns : [
                 {
@@ -89,7 +90,7 @@ export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
                   ngay_hieu_luc: '12/05/2021',
                   thoi_han: 10,
                   trang_thai: ['1'],
-                  thao_tac: <div><Link title="Xem GP" to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung"><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
+                  thao_tac: <div><Link title="Xem GP" to={this.xemThongTinChung}><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
                 },
                 {
                   id: '2',
@@ -100,20 +101,74 @@ export default class QuanLyCapPhepNuocMatThuyDien extends React.Component {
                   ngay_hieu_luc: '11/05/2021',
                   thoi_han: 10,
                   trang_thai: ['2'],
-                  thao_tac: <div><Link title="Xem GP" to="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-chung"><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
+                  thao_tac: <div><Link title="Xem GP" to={this.xemThongTinChung}><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
                 }
             ]
         }
     }
 
     componentDidMount(){
-        document.title = "Quản lý cấp phép nước mặt | Thủy điện | Giám sát tài nguyên nước Sơn La";
+        if(this.state.pagename === "thuy-dien"){
+            document.title = "Thủy điện | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "ho-chua"){
+            document.title = "Hồ Chứa | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "tram-bom"){
+            document.title = "Trạm Bơm | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "he-thong-thuy-loi"){
+            document.title = "Đập/Hệ Thống Thủy Lợi | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "cong"){
+            document.title = "Cống | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "tram-cap-nuoc"){
+            document.title = "Trạm Cấp  Nước | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "nha-may-nuoc"){
+            document.title = "Nhà  Máy Nước | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "cong-trinh-khac"){
+            document.title = "Công Trình Khác | Quản lý cấp phép nước mặt";
+        }
+        
+    }
+    headerTitle = () => {
+        if(this.state.pagename === "thuy-dien"){
+            return " THỦY ĐIỆN | NƯỚC MẶT";
+        }
+        else if(this.state.pagename === "ho-chua"){
+            return " HỒ CHỨA | NƯỚC MẶT";
+        }
+        else if(this.state.pagename === "tram-bom"){
+            return " TRẠM BƠM | NƯỚC MẶT";
+        }
+        else if(this.state.pagename === "he-thong-thuy-loi"){
+            return " HT THỦY LỢI | NƯỚC MẶT";
+        }
+        else if(this.state.pagename === "cong"){
+            return " CỐNG | NƯỚC MẶT";
+        }
+        else if(this.state.pagename === "tram-cap-nuoc"){
+            return " TRẠM CẤP NƯỚC | NƯỚC MẶT";
+        }
+        else if(this.state.pagename === "nha-may-nuoc"){
+            return " NHÀ MÁY NƯỚC | NƯỚC MẶT";
+        }
+        else if(this.state.pagename === "cong-trinh-khac"){
+            return " CÔNG TRÌNH KHÁC | NƯỚC MẶT";
+        }
+    }
+
+    xemThongTinChung = () => {
+        return "/quan-ly-cap-phep/nuoc-mat/"+this.state.pagename+"/xem-thong-tin-chung";
     }
 
     render(){
         return(
 			<div className="p-0">
-                <Header headTitle="NƯỚC MẶT | THỦY ĐIỆN" previousLink="/quan-ly-cap-phep" showHeadImage={true} />
+                <Header headTitle={this.headerTitle()} previousLink="/quan-ly-cap-phep" showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-12 col-lg-3 px-0 menu-home discharge-water text-center">
                         <div className="col-12 px-0">

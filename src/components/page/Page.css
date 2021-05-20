@@ -56,7 +56,8 @@
     background: #2f80ed33;
 }
 
-.hover-link:hover{background-color: lightsalmon; font-weight: bold;}
+.hover-link{color: #000;}
+.hover-link:hover{background-color: #1874bd !important; font-weight: bold; color: #fff;}
 
 #surfacewater-usage { overflow-y: auto; height: calc(100vh - 156px);
 }

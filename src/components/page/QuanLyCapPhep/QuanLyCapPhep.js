@@ -160,67 +160,67 @@ export default class QuanLyCapPhep extends React.Component {
                                         <p className="btn btn-outline-dark col-11 font-13 btn-sm d-flex justify-content-center align-items-center font-weight-bold"> <InfoCircleOutlined className="mx-1" /> GIỚI THIỆU CHUNG</p>
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight-bold text-left">KHAI THÁC SD NƯỚC MẶT</p>
                                         <li className="nav-item">
-                                            <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien" className="nav-link font-13 text-dark hover-link" href="#">Thủy Điện</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/thuy-dien" className="nav-link font-13 hover-link" href="#">Thủy Điện</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Hồ Chứa</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/ho-chua" className="nav-link font-13 hover-link">Hồ Chứa</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Trạm Bơm</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/tram-bom" className="nav-link font-13 hover-link">Trạm Bơm</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Đập / Hệ Thống Thủy Lợi</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/he-thong-thuy-loi" className="nav-link font-13 hover-link">Đập / Hệ Thống Thủy Lợi</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Cống</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/cong" className="nav-link font-13 hover-link">Cống</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Trạm Cấp Nước</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/tram-cap-nuoc" className="nav-link font-13 hover-link">Trạm Cấp Nước</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Nhà Máy Nước</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/nha-may-nuoc" className="nav-link font-13 hover-link">Nhà Máy Nước</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Công Trình Khác</Link>
+                                            <Link to="/quan-ly-cap-phep/nuoc-mat/cong-trinh-khac" className="nav-link font-13 hover-link">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                     <div className="exploit-surfacewater">
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight-bold text-left">KHAI THÁC SỬ DỤNG NDĐ</p>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Khai Thác</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Khai Thác</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Thăm Dò</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Thăm Dò</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Hành Nghề Khoan</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Hành Nghề Khoan</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Công Trình Khác</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                     <div className="exploit-surfacewater">
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight-bold text-left">XẢ THẢI VÀO NN</p>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Khu / Cụm CN  Tập Trung</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Khu / Cụm CN  Tập Trung</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">SX Tiểu Thủ CN</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">SX Tiểu Thủ CN</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">SX KD Dịch Vụ</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">SX KD Dịch Vụ</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">CS Bệnh Viện</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">CS Bệnh Viện</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Khu Dân Cư / Làng Nghề</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Khu Dân Cư / Làng Nghề</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Chăn Nuôi / NTTS</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Chăn Nuôi / NTTS</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="#" className="nav-link font-13 text-dark hover-link">Công Trình Khác</Link>
+                                            <Link to="#" className="nav-link font-13 hover-link">Công Trình Khác</Link>
                                         </li>
                                     </div>
                                 </ul>
@@ -350,7 +350,7 @@ export default class QuanLyCapPhep extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className="col-11 pb-1 mx-auto my-3 rounded text-dark px-0 bg-warning">
+                                <div className="col-11 pb-1 mx-auto my-3 rounded px-0 bg-warning">
                                     <p className="bg-euw-title-box rounded mb-2 p-2 font-weight-bold text-center">KHAI THÁC NƯỚC DƯỚI ĐẤT</p>
                                     <div className="font-weight-bold col-12 d-flex">
                                         <p className="col-9 px-sm-0 font-13">Giấy phép: </p>

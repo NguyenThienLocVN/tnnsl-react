@@ -4,14 +4,70 @@ import Map from '../../../../layout/Map';
 import { FileImageOutlined } from '@ant-design/icons';
 
 export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.Component {
-    componentDidMount(){
-        document.title = "Quản lý cấp phép | Giám sát tài nguyên nước Sơn La";
+    constructor(props) {
+        super(props);
+        this.state = {
+          pagename: this.props.match.params.pagename,
+        };
+      }
+      componentDidMount(){
+        if(this.state.pagename === "thuy-dien"){
+            document.title = "Thông tin chi tiết | Thủy điện | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "ho-chua"){
+            document.title = "Thông tin chi tiết | Hồ Chứa | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "tram-bom"){
+            document.title = "Thông tin chi tiết | Trạm Bơm | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "he-thong-thuy-loi"){
+            document.title = "Thông tin chi tiết | Đập/Hệ Thống Thủy Lợi | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "cong"){
+            document.title = "Thông tin chi tiết | Cống | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "tram-cap-nuoc"){
+            document.title = "Thông tin chi tiết | Trạm Cấp  Nước | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "nha-may-nuoc"){
+            document.title = "Thông tin chi tiết | Nhà  Máy Nước | Quản lý cấp phép nước mặt";
+        }
+        else if(this.state.pagename === "cong-trinh-khac"){
+            document.title = "Thông tin chi tiết | Công Trình Khác | Quản lý cấp phép nước mặt";
+        }
+        
+    }
+    headerTitle = () => {
+        if(this.state.pagename === "thuy-dien"){
+            return " THỦY ĐIỆN | THÔNG TIN CT";
+        }
+        else if(this.state.pagename === "ho-chua"){
+            return " HỒ CHỨA | THÔNG TIN CT";
+        }
+        else if(this.state.pagename === "tram-bom"){
+            return " TRẠM BƠM | THÔNG TIN CT";
+        }
+        else if(this.state.pagename === "he-thong-thuy-loi"){
+            return " HT THỦY LỢI | THÔNG TIN CT";
+        }
+        else if(this.state.pagename === "cong"){
+            return " CỐNG | THÔNG TIN CT";
+        }
+        else if(this.state.pagename === "tram-cap-nuoc"){
+            return " TRẠM CẤP NƯỚC | THÔNG TIN CT";
+        }
+        else if(this.state.pagename === "nha-may-nuoc"){
+            return " NHÀ MÁY NƯỚC | THÔNG TIN CT";
+        }
+        else if(this.state.pagename === "cong-trinh-khac"){
+            return " CÔNG TRÌNH KHÁC | THÔNG TIN CT";
+        }
     }
 
     render(){
         return(
 			<div className="p-0">
-                <Header headTitle="THỦY ĐIỆN | THÔNG TIN CÔNG TRÌNH" previousLink="/quan-ly-cap-phep/nuoc-mat/thuy-dien/xem-thong-tin-cong-trinh" showHeadImage={true} />
+                <Header headTitle={this.headerTitle()} previousLink={"/quan-ly-cap-phep/nuoc-mat/"+this.state.pagename+"xem-cong-trinh"} showHeadImage={true} />
                 <main className="d-flex flex-column flex-lg-row">
                     <div className="col-lg-12 px-0 row mx-0">
                         <div className="col-lg-6 px-0 menu-home discharge-water">

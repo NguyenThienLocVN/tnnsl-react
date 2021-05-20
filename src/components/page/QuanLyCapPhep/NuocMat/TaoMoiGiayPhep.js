@@ -4,10 +4,10 @@ import Header from '../../../layout/Header';
 import { Steps, Button, message } from 'antd';
 import Map from '../../../layout/Map';
 import { SolutionOutlined, BankOutlined, BarChartOutlined, StarFilled, RightOutlined, LeftOutlined,SaveOutlined } from '@ant-design/icons';
-import FormThongTinChung from "./CongTrinhThuyDien/FormCreate/FormThongTinChung";
-import FormThongTinCongTrinh from "./CongTrinhThuyDien/FormCreate/FormThongTinCongTrinh";
-import FormGiamSatKTSD from "./CongTrinhThuyDien/FormCreate/FormGiamSatKTSD";
-import FormChatLuongNuocMat from "./CongTrinhThuyDien/FormCreate/FormChatLuongNuocMat";
+import FormThongTinChung from "./FormCreate/FormThongTinChung";
+import FormThongTinCongTrinh from "./FormCreate/FormThongTinCongTrinh";
+import FormGiamSatKTSD from "./FormCreate/FormGiamSatKTSD";
+import FormChatLuongNuocMat from "./FormCreate/FormChatLuongNuocMat";
 
 const { Step } = Steps;
 
