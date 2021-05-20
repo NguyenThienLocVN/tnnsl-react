@@ -157,8 +157,8 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                             <div className="col-12 px-0 font-weight-bold text-13">H_hiện tại(m):</div>
                                                             <div className="col-12 px-0 text-13">40</div>
                                                         </div>
-                                                        <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="w-100 h-100 bg-dark">img</div>
+                                                        <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center p-1">
+                                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/sea-level.png'} alt="sea-level" className="w-100 h-100" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -179,8 +179,8 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                             <div className="col-12 px-0 font-weight-bold text-13">Q_hiện tại(m3/s):</div>
                                                             <div className="col-12 px-0 text-13">40</div>
                                                         </div>
-                                                        <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="w-100 h-100 bg-dark">img</div>
+                                                        <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center p-1">
+                                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/sea-level-2.png'} alt="sea-level-2" className="w-100 h-100" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -197,8 +197,8 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                         <div className="col-2 px-0 text-13">40</div>
                                                     </div>
                                                 </div>
-                                                <div className="row mx-0 col-sm-3 px-0">
-                                                    <div className="w-100 h-100 bg-dark">img</div>
+                                                <div className="row mx-0 col-sm-3 px-1">
+                                                    <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/water-level.png'} alt="water-level" className="w-100 h-100" />
                                                 </div>
                                             </div>
                                             <div className="col-sm-6 px-0 row mx-0">
@@ -213,71 +213,71 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                         <div className="col-2 px-0 text-13">40</div>
                                                     </div>
                                                 </div>
-                                                <div className="row mx-0 col-sm-3 px-0">
-                                                    <div className="w-100 h-100 bg-dark">img</div>
+                                                <div className="row mx-0 col-sm-3 px-1">
+                                                    <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/water-level-2.png'} alt="water-level-2" className="w-100 h-100" />
                                                 </div>
                                             </div>
                                             {/*  */}
                                             <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Hình thức giám sát</p>
                                             <div className="row mx-0">
-                                                <div className="col-sm-4 px-0 row mx-0">
-                                                    <p className="font-14 col-12 font-weight-bold text-success mb-0">Tự động, tực tuyến (m)</p>
+                                                <div className="col-sm-4 px-0 row mx-0 border-right">
+                                                    <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Tự động, tực tuyến (m)</p>
                                                     <div className="row mx-0 col-sm-9 px-0">
                                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                                             <div className="col-12 px-0 font-weight-bold text-13">
-                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                <div className="row col-lg-12 mx-0 align-items-center py-1">
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>có</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>Có</span>
                                                                     </div>
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>không</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>Không</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row mx-0 col-sm-3 px-0">
-                                                        <div className="w-100 h-100 bg-dark">img</div>
+                                                    <div className="row mx-0 col-sm-3 p-1 border-bottom">
+                                                        <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/automatic.png'} alt="automatic" className="w-100 h-100" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-4 px-0 row mx-0 border-right">
+                                                    <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Giám sát bằng camera</p>
+                                                    <div className="row mx-0 col-sm-9 px-0">
+                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                            <div className="col-12 px-0 font-weight-bold text-13">
+                                                                <div className="row col-lg-12 mx-0 align-items-center py-1">
+                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                        <input type="checkbox" className="mx-1" /> <span>Có</span>
+                                                                    </div>
+                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                        <input type="checkbox" className="mx-1" /> <span>Không</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row mx-0 col-sm-3 p-1 border-bottom">
+                                                        <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/cctv-camera.png'} alt="cctv-camera" className="w-100 h-100" />
                                                     </div>
                                                 </div>
                                                 <div className="col-sm-4 px-0 row mx-0">
-                                                    <p className="font-14 col-12 font-weight-bold text-success mb-0">Giám sát bằng camera</p>
+                                                    <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Giám sát định kỳ</p>
                                                     <div className="row mx-0 col-sm-9 px-0">
                                                         <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
                                                             <div className="col-12 px-0 font-weight-bold text-13">
-                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                <div className="row col-lg-12 mx-0 align-items-center py-1">
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>có</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>Có</span>
                                                                     </div>
                                                                     <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>không</span>
+                                                                        <input type="checkbox" className="mx-1" /> <span>Không</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row mx-0 col-sm-3 px-0">
-                                                        <div className="w-100 h-100 bg-dark">img</div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-sm-4 px-0 row mx-0">
-                                                    <p className="font-14 col-12 font-weight-bold text-success mb-0">Giám sát định kỳ</p>
-                                                    <div className="row mx-0 col-sm-9 px-0">
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-12 px-0 font-weight-bold text-13">
-                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>có</span>
-                                                                    </div>
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>không</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row mx-0 col-sm-3 px-0">
-                                                        <div className="w-100 h-100 bg-dark">img</div>
+                                                    <div className="row mx-0 col-sm-3 p-1 border-bottom">
+                                                        <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/report.png'} alt="report" className="w-100 h-100" />
                                                     </div>
                                                 </div>
                                             </div>
