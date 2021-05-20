@@ -178,164 +178,265 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                 <div className="col-6 px-0 font-weight-bold text-13">Xã:</div>
                                                 <div className="col-6 px-0 text-13">Tên Xã</div>
                                             </div>
+                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
                                             <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                                 <div className="col-10 px-0 font-weight-bold text-13">Q lớn nhất qua NM (m3/s):</div>
                                                 <div className="col-2 px-0 text-13">40000</div>
-                                            </div>
+                                            </div>}
+                                            {(this.state.pagename === "tram-bom") &&
+                                            <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
+                                                <div className="col-10 px-0 font-weight-bold text-13">Công suất máy bơm(m3/s):</div>
+                                                <div className="col-2 px-0 text-13">40000</div>
+                                            </div>}
                                             <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                                 <div className="col-10 px-0 font-weight-bold text-13">Q xả tối thiểu (m3/s):</div>
                                                 <div className="col-2 px-0 text-13">40000</div>
                                             </div>
+                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
                                             <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                                 <div className="col-10 px-0 font-weight-bold text-13">Công suất lắp máy MW:</div>
                                                 <div className="col-2 px-0 text-13">40000</div>
-                                            </div>
+                                            </div>}
                                         </div>
                                         <div className="row mx-0 mb-3">
-                                            <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight-bold text-left">Giám sát HTSD theo thông tư 47/2017/TT-BTNMT</p>
-                                            <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Thông số giám sát</p>
-                                            <div className="row mx-0">
-                                                <div className="col-sm-6 px-0 row mx-0">
-                                                    <p className="font-14 col-12 font-weight-bold text-success mb-0">Mực nước hồ (m)</p>
-                                                    <div className="row mx-0 col-sm-6 px-0">
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-10 px-0 font-weight-bold text-13">H_min(m):</div>
-                                                            <div className="col-2 px-0 text-13">40</div>
+                                            <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight-bold text-left">Giám sát KTSD theo thông tư 47/2017/TT-BTNMT</p>
+                                            {/* Ho Chua & Thuy Dien */}
+                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
+                                            <div id="thuy-dien-ho-chua">
+                                                <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Thông số giám sát</p>
+                                                    <div className="row mx-0">
+                                                        <div className="col-sm-6 px-0 row mx-0">
+                                                            <p className="font-14 col-12 font-weight-bold text-success mb-0">Mực nước hồ (m)</p>
+                                                            <div className="row mx-0 col-sm-6 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">H_min(m):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">H_max(m):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="row mx-0 col-sm-6 px-0">
+                                                                <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-12 px-0 font-weight-bold text-13">H_hiện tại(m):</div>
+                                                                    <div className="col-12 px-0 text-13">40</div>
+                                                                </div>
+                                                                <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center p-1">
+                                                                    <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/sea-level.png'} alt="sea-level" className="w-100 h-100" />
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-10 px-0 font-weight-bold text-13">H_max(m):</div>
-                                                            <div className="col-2 px-0 text-13">40</div>
+                                                        <div className="col-sm-6 px-0 row mx-0">
+                                                            <p className="font-14 col-12 font-weight-bold text-success mb-0">Lưu lượng xả nhà máy (m3/s)</p>
+                                                            <div className="row mx-0 col-sm-6 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">Q_min(m3/s):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">Q_max(m3/s):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="row mx-0 col-sm-6 px-0">
+                                                                <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-12 px-0 font-weight-bold text-13">Q_hiện tại(m3/s):</div>
+                                                                    <div className="col-12 px-0 text-13">40</div>
+                                                                </div>
+                                                                <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center p-1">
+                                                                    <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/sea-level-2.png'} alt="sea-level-2" className="w-100 h-100" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-sm-6 px-0 row mx-0">
+                                                            <p className="font-14 col-12 font-weight-bold text-success mb-0">Lưu lượng duy trì xả tối thiểu (m3/s)</p>
+                                                            <div className="row mx-0 col-sm-9 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">H_min(m):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">H_max(m):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="row mx-0 col-sm-3 px-1">
+                                                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/water-level.png'} alt="water-level" className="w-100 h-100" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-sm-6 px-0 row mx-0">
+                                                            <p className="font-14 col-12 font-weight-bold text-success mb-0">Lưu lượng xả qua tràn (m3/s)</p>
+                                                            <div className="row mx-0 col-sm-9 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">Q_min(m3/s):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-10 px-0 font-weight-bold text-13">Q_max(m3/s):</div>
+                                                                    <div className="col-2 px-0 text-13">40</div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="row mx-0 col-sm-3 px-1">
+                                                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/water-level-2.png'} alt="water-level-2" className="w-100 h-100" />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row mx-0 col-sm-6 px-0">
-                                                        <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-12 px-0 font-weight-bold text-13">H_hiện tại(m):</div>
-                                                            <div className="col-12 px-0 text-13">40</div>
-                                                        </div>
-                                                        <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center p-1">
-                                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/sea-level.png'} alt="sea-level" className="w-100 h-100" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-sm-6 px-0 row mx-0">
-                                                    <p className="font-14 col-12 font-weight-bold text-success mb-0">Lưu lượng xả nhà máy (m3/s)</p>
-                                                    <div className="row mx-0 col-sm-6 px-0">
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-10 px-0 font-weight-bold text-13">Q_min(m3/s):</div>
-                                                            <div className="col-2 px-0 text-13">40</div>
-                                                        </div>
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-10 px-0 font-weight-bold text-13">Q_max(m3/s):</div>
-                                                            <div className="col-2 px-0 text-13">40</div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row mx-0 col-sm-6 px-0">
-                                                        <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-12 px-0 font-weight-bold text-13">Q_hiện tại(m3/s):</div>
-                                                            <div className="col-12 px-0 text-13">40</div>
-                                                        </div>
-                                                        <div className="row col-lg-6 p-0 mx-0 border-bottom align-items-center p-1">
-                                                            <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/sea-level-2.png'} alt="sea-level-2" className="w-100 h-100" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6 px-0 row mx-0">
-                                                <p className="font-14 col-12 font-weight-bold text-success mb-0">Lưu lượng duy trì xả tối thiểu (m3/s)</p>
-                                                <div className="row mx-0 col-sm-9 px-0">
-                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                        <div className="col-10 px-0 font-weight-bold text-13">H_min(m):</div>
-                                                        <div className="col-2 px-0 text-13">40</div>
-                                                    </div>
-                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                        <div className="col-10 px-0 font-weight-bold text-13">H_max(m):</div>
-                                                        <div className="col-2 px-0 text-13">40</div>
-                                                    </div>
-                                                </div>
-                                                <div className="row mx-0 col-sm-3 px-1">
-                                                    <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/water-level.png'} alt="water-level" className="w-100 h-100" />
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6 px-0 row mx-0">
-                                                <p className="font-14 col-12 font-weight-bold text-success mb-0">Lưu lượng xả qua tràn (m3/s)</p>
-                                                <div className="row mx-0 col-sm-9 px-0">
-                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                        <div className="col-10 px-0 font-weight-bold text-13">Q_min(m3/s):</div>
-                                                        <div className="col-2 px-0 text-13">40</div>
-                                                    </div>
-                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                        <div className="col-10 px-0 font-weight-bold text-13">Q_max(m3/s):</div>
-                                                        <div className="col-2 px-0 text-13">40</div>
-                                                    </div>
-                                                </div>
-                                                <div className="row mx-0 col-sm-3 px-1">
-                                                    <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/water-level-2.png'} alt="water-level-2" className="w-100 h-100" />
-                                                </div>
-                                            </div>
-                                            {/*  */}
-                                            <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Hình thức giám sát</p>
-                                            <div className="row mx-0">
-                                                <div className="col-sm-4 px-0 row mx-0 border-right">
-                                                    <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Tự động, tực tuyến (m)</p>
-                                                    <div className="row mx-0 col-sm-9 px-0">
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-12 px-0 font-weight-bold text-13">
-                                                                <div className="row col-lg-12 mx-0 align-items-center py-1">
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>Có</span>
+                                                    {/*  */}
+                                                    <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Hình thức giám sát</p>
+                                                    <div className="row mx-0">
+                                                        <div className="col-sm-4 px-0 row mx-0 border-right">
+                                                            <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Tự động, tực tuyến (m)</p>
+                                                            <div className="row mx-0 col-sm-9 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-12 px-0 font-weight-bold text-13">
+                                                                        <div className="row col-lg-12 mx-0 align-items-center py-1">
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Có</span>
+                                                                            </div>
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Không</span>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>Không</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="row mx-0 col-sm-3 p-1 border-bottom">
+                                                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/automatic.png'} alt="automatic" className="w-100 h-100" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-sm-4 px-0 row mx-0 border-right">
+                                                            <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Giám sát bằng camera</p>
+                                                            <div className="row mx-0 col-sm-9 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-12 px-0 font-weight-bold text-13">
+                                                                        <div className="row col-lg-12 mx-0 align-items-center py-1">
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Có</span>
+                                                                            </div>
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Không</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="row mx-0 col-sm-3 p-1 border-bottom">
+                                                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/cctv-camera.png'} alt="cctv-camera" className="w-100 h-100" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-sm-4 px-0 row mx-0">
+                                                            <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Giám sát định kỳ</p>
+                                                            <div className="row mx-0 col-sm-9 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-12 px-0 font-weight-bold text-13">
+                                                                        <div className="row col-lg-12 mx-0 align-items-center py-1">
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Có</span>
+                                                                            </div>
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Không</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="row mx-0 col-sm-3 p-1 border-bottom">
+                                                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/report.png'} alt="report" className="w-100 h-100" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>}
+                                            {/* end Ho Chua & Thuy Dien */}
+                                            {/* Tram Bom */}
+                                            {(this.state.pagename === "tram-bom") &&
+                                                <div id="tram-bom">
+                                                    <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Thông số giám sát</p>
+                                                    <div className="row mx-0">
+                                                        <div className="col-sm-12 px-0">
+                                                            <div className="col-sm-6 px-0 row mx-0">
+                                                                <p className="font-14 col-12 font-weight-bold text-success mb-0">Lưu lượng khai thác(m3/s)</p>
+                                                                <div className="row mx-0 col-sm-9 px-0">
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13">HTNL(m3/s):</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
+                                                                    </div>
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13">KTTT(m3/s):</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="row mx-0 col-sm-3 px-1">
+                                                                    <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/water-level.png'} alt="water-level" className="w-100 h-100" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="row mx-0">
+                                                            <p className="font-14 col-12 font-weight-bold text-success mb-0">Chất lượng nước khai thác(m3/s)</p>
+                                                            <div className="col-sm-2 px-0 row mx-0">
+                                                                <div className="row mx-0 col-sm-12 px-0">
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13">BOD5:</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
+                                                                    </div>
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13">COD:</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-sm-5 px-0 row mx-0">
+                                                                <div className="row mx-0 col-sm-12 px-0">
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13">Amoni(NH₄ Tính theo N):</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
+                                                                    </div>
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13">Nitrat(NO₃ Tính theo N):</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-sm-5 px-0 row mx-0">
+                                                                <div className="row mx-0 col-sm-12 px-0">
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13">Phosphat(PO43 Tính theo P):</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
+                                                                    </div>
+                                                                    <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                        <div className="col-10 px-0 font-weight-bold text-13"> TSS:</div>
+                                                                        <div className="col-2 px-0 text-13">40</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row mx-0 col-sm-3 p-1 border-bottom">
-                                                        <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/automatic.png'} alt="automatic" className="w-100 h-100" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-sm-4 px-0 row mx-0 border-right">
-                                                    <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Giám sát bằng camera</p>
-                                                    <div className="row mx-0 col-sm-9 px-0">
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-12 px-0 font-weight-bold text-13">
-                                                                <div className="row col-lg-12 mx-0 align-items-center py-1">
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>Có</span>
-                                                                    </div>
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>Không</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row mx-0 col-sm-3 p-1 border-bottom">
-                                                        <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/cctv-camera.png'} alt="cctv-camera" className="w-100 h-100" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-sm-4 px-0 row mx-0">
-                                                    <p className="font-14 col-12 font-weight-bold text-success text-center mb-0">Giám sát định kỳ</p>
-                                                    <div className="row mx-0 col-sm-9 px-0">
-                                                        <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                            <div className="col-12 px-0 font-weight-bold text-13">
-                                                                <div className="row col-lg-12 mx-0 align-items-center py-1">
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>Có</span>
-                                                                    </div>
-                                                                    <div className="col-6 px-0 text-13 d-flex align-items-center">
-                                                                        <input type="checkbox" className="mx-1" /> <span>Không</span>
+                                                    <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Hình thức giám sát</p>
+                                                    <div className="row mx-0">
+                                                        <div className="col-sm-4 px-0 row mx-0">
+                                                            <p className="font-14 col-12 font-weight-bold text-success text-left mb-0">Giám sát định kỳ</p>
+                                                            <div className="row mx-0 col-sm-9 px-0">
+                                                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
+                                                                    <div className="col-12 px-0 font-weight-bold text-13">
+                                                                        <div className="row col-lg-12 mx-0 align-items-center py-1">
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Có</span>
+                                                                            </div>
+                                                                            <div className="col-6 px-0 text-13 d-flex align-items-center">
+                                                                                <input type="checkbox" className="mx-1" /> <span>Không</span>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div className="row mx-0 col-sm-3 p-1 border-bottom">
+                                                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/automatic.png'} alt="automatic" className="w-100 h-100" />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row mx-0 col-sm-3 p-1 border-bottom">
-                                                        <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/report.png'} alt="report" className="w-100 h-100" />
-                                                    </div>
                                                 </div>
-                                            </div>
+                                            }
+                                            {/* end Tram Bom */}
                                         </div>
                                     </div>
                                 </div>
