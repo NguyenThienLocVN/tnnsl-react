@@ -2,15 +2,45 @@ import React, { useState } from 'react';
 import Header from '../../../../layout/Header';
 import { Link } from 'react-router-dom';
 import Map from '../../../../layout/Map';
-import {Button, } from 'antd';
+import { Button, DatePicker } from 'antd';
 import { Modal} from 'react-bootstrap';
-import { MacCommandOutlined, SelectOutlined, } from "@ant-design/icons";
+import { MacCommandOutlined, SelectOutlined, SearchOutlined } from "@ant-design/icons";
+import { Line } from 'react-chartjs-2';
 
 function TongHopHoChua() {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const data = {
+        labels: ['11/02/2021', '12/02/2021', '13/02/2021', '14/02/2021', '15/02/2021', '16/02/2021', '17/02/2021', '18/02/2021', '19/02/2021', '20/02/2021', '21/02/2021', '22/02/2021'],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [65, 59, 80, 81, 56, 55, 23, 15, 15, 54, 92, 66],
+          fill: false,
+          borderColor: 'rgb(75, 192, 192)',
+        }]
+    };
+
+    const chartOptions = {
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom'
+            }
+        },
+        scales: {
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Mực nước'
+                }
+            }
+        }
+    }
 
     return (
         <>
@@ -20,18 +50,86 @@ function TongHopHoChua() {
                 <Modal.Title>Tổng hợp hồ chứa / tên hồ chứa (CP)</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <div className="">
-                    Nội dung, biểu đồ
+                <div className="col-12 p-0 d-flex">
+                    <div className="col-3 p-0">
+                        <p className="font-weight-bold mb-0 mt-3">THÔNG SỐ</p>
+                        <div className="bg-lightgray col-12 d-flex px-2">
+                            <p className="col-9 p-0 my-1">Mực nước yêu cầu đầu mùa cạn (m)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="bg-lightgray col-12 d-flex px-2">
+                            <p className="col-9 p-0 my-1">Dung tích yêu cầu đầu mùa cạn (triệu m³)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+
+                        <p className="font-weight-bold mb-0 mt-3">TÌNH HÌNH VẬN HÀNH</p>
+                        <div className="col-12 d-flex px-2 bg-lightgreen">
+                            <p className="col-9 p-0 my-1">Mực nước hiện tại (m)</p>
+                            <p className="col-3 pr-0 my-1">544.91</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightgreen">
+                            <p className="col-9 p-0 my-1">Mực nước yêu cầu (m)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightgreen">
+                            <p className="col-9 p-0 my-1">Chênh lệch (m)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-goldenyellow">
+                            <p className="col-9 p-0 my-1">Dung tích hiện tại (triệu m³)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-goldenyellow">
+                            <p className="col-9 p-0 my-1">Dung tích yêu cầu (triệu m³)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-goldenyellow">
+                            <p className="col-9 p-0 my-1">Chênh lệch (m)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightred">
+                            <p className="col-9 p-0 my-1">Lưu lượng xả thực tế (m³/s)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightred">
+                            <p className="col-9 p-0 my-1">Lưu lượng yêu cầu (m³/s)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightred">
+                            <p className="col-9 p-0 my-1">Chênh lệch (m³/s)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightblue">
+                            <p className="col-9 p-0 my-1">Thời gian thực tế (Giờ)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightblue">
+                            <p className="col-9 p-0 my-1">Thời gian yêu cầu (Giờ)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                        <div className="col-12 d-flex px-2 bg-lightblue">
+                            <p className="col-9 p-0 my-1">Chênh lệch (Giờ)</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                    </div>
+                    <div className="col-9">
+                        <div className="col-12 d-flex">
+                            <div className="col-4 d-flex align-items-center">
+                                <span className="pr-2">Từ ngày</span>
+                                <DatePicker name="from-date" />
+                            </div>
+                            <div className="col-4 d-flex align-items-center">
+                                <span className="pr-2">Đến ngày</span>
+                                <DatePicker name="to-date" />
+                            </div>
+                            <div className="col-3">
+                                <button className="submit-date btn btn-info d-flex align-items-center font-13"><SearchOutlined />&nbsp; TÌM KIẾM</button>
+                            </div>
+                        </div>
+                        <Line data={data} option={chartOptions} />
+                    </div>
                 </div>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>   
-            </Modal.Footer>
         </Modal>
         </>
     );
@@ -51,18 +149,92 @@ function CapNhatSoLieuVanHanh() {
                 <Modal.Title>CẬP NHẬT SỐ LIỆU VẬN HÀNH - TÊN THỦY ĐIỆN</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <div className="">
-                    Nội dung
+                <div className="col-12 p-0">
+                    <div className="col-12 d-flex px-2">
+                        <div className="col-6 p-0 my-1 d-flex">
+                            <p className="col-3 m-0 pl-0">Hồ chứa</p>
+                            <p className="col-6 m-0">Ialy</p>
+                        </div>
+                        <div className="col-6 p-0 my-1 d-flex">
+                            <p className="col-3 m-0">Ngày</p>
+                            <p className="col-6 m-0">05/05/2021</p>
+                        </div>
+                    </div>
+
+                    <p className="font-weight-bold mb-0 mt-3 pl-2">TRUNG BÌNH NGÀY</p>
+                    <div className="col-12 d-flex px-2">
+                        <div className="col-6 d-flex px-2 bg-lightgray">
+                            <p className="col-7 p-0 my-1">Mực nước hồ (m)</p>
+                            <p className="col-3 pr-0 my-1">544.91</p>
+                        </div>
+                        <div className="col-6 d-flex px-2 bg-lightgray">
+                            <p className="col-7 p-0 my-1">Tổng lưu lượng xả (m)</p>
+                            <p className="col-3 pr-0 my-1">29</p>
+                        </div>
+                    </div>
+                    <div className="col-12 d-flex px-2">
+                        <div className="col-6 d-flex px-2">
+                            <p className="col-7 p-0 my-1">Lưu lượng đến hồ (m³/s)</p>
+                            <p className="col-3 pr-0 my-1">91</p>
+                        </div>
+                        <div className="col-6 d-flex px-2">
+                            <p className="col-7 p-0 my-1">Lưu lượng qua nhà máy (m³/s)</p>
+                            <p className="col-3 pr-0 my-1">21</p>
+                        </div>
+                    </div>
+                    <div className="col-12 d-flex px-2">
+                        <div className="col-6 d-flex px-2 bg-lightgray">
+                            <p className="col-7 p-0 my-1">Số giờ phát điện</p>
+                            <p className="col-3 pr-0 my-1">91</p>
+                        </div>
+                        <div className="col-6 d-flex px-2 bg-lightgray">
+                            <p className="col-7 p-0 my-1">Lưu lượng xả sau đập (m³/s)</p>
+                            <p className="col-3 pr-0 my-1">28</p>
+                        </div>
+                    </div>
+                    <div className="col-12 d-flex px-2">
+                        <div className="col-6 d-flex px-2">
+                            <p className="col-7 p-0 my-1">Ghi chú</p>
+                            <p className="col-3 pr-0 my-1">--</p>
+                        </div>
+                    </div>
+
+                    <p className="font-weight-bold mb-0 mt-3 pl-2">CHI TIẾT</p>
+                    <table class="table table-sm table-bordered col-12 table-striped table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Giờ</th>
+                                <th scope="col">Mực nước hồ (m)</th>
+                                <th scope="col">Lưu lượng đến hồ (m³/s)</th>
+                                <th scope="col">Tổng lưu lượng xả (m³/s)</th>
+                                <th scope="col">Lưu lượng qua nhà máy (m³/s)</th>
+                                <th scope="col">Lưu lượng xả sau đập (m³/s)</th>
+                                <th scope="col">Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">07:00</th>
+                                <td>500.37</td>
+                                <td>233</td>
+                                <td>280</td>
+                                <td>280</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12:00</th>
+                                <td>500.37</td>
+                                <td>263</td>
+                                <td>281</td>
+                                <td>282</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>   
-            </Modal.Footer>
         </Modal>
         </>
     );
@@ -475,8 +647,8 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                         <tr>
                                                             <td className="font-13 align-middle">Suối lắp 1 
                                                                 <div className="float-right font-14 d-flex text-primary"> 
-                                                                    <div className="mx-1"><TongHopHoChua /></div>
-                                                                    <div className="mx-1"><CapNhatSoLieuVanHanh /> </div>
+                                                                    <div className="mx-1"><TongHopHoChua title="Tổng hợp hồ chứa" /></div>
+                                                                    <div className="mx-1"><CapNhatSoLieuVanHanh title="Cập nhật số liệu vận hành" /> </div>
                                                                 </div>
                                                             </td>
                                                             <td className="font-13 align-middle text-center">0</td>

@@ -19,9 +19,11 @@
     height: 85px;
 }
 
-.bg-lightgray {
-    background-color: #fbfafa !important;
-}
+.bg-lightgray { background-color: #fbfafa !important; }
+.bg-goldenyellow { background-color: lightgoldenrodyellow !important }
+.bg-lightred { background-color: #f3baba !important }
+.bg-lightgreen { background-color: #b8ffb8 !important }
+.bg-lightblue { background: lightblue !important; }
 
 .btn-home-top {
     width: 35px;
