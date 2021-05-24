@@ -92,62 +92,154 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
                                         <Link className="py-2 px-3 text-primary" to={"/quan-ly-cap-phep/nuoc-mat/"+this.state.pagename+"/xem-thong-tin-cong-trinh/chi-tiet"}>Thông tin chi tiết</Link>
                                     </div>
                                     <div tab="Thông tin chung" key="1">
-                                        <div className="row mx-0 col-lg-12 px-0 infomation_table pb-5">
+                                        <div className="row mx-0 col-lg-12 px-0">
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Tên công trình: </div>
-                                                <div className="col-lg-8">Thủy Điện  ABC </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Ký hiệu công trình: </div>
-                                                <div className="col-lg-8"> CT01 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Địa điểm: </div>
-                                                <div className="col-lg-12"> xã Ea Wer, xã Tân Hòa, huyện Buôn Đôn, tỉnh Đăk Lăk và xã Ea Pô huyện Cư Jút, tỉnh Đăk Nông </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Tên công trình:</span>
+                                                        </div>
+                                                        <input className="form-control form-control-sm" value=" Thủy Điện  ABC  " readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Huyện: </div>
-                                                <div className="col-lg-8">Huyện ABC </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Ký hiệu công trình: </span>
+                                                        </div>
+                                                        <input className="form-control form-control-sm" value=" CT01 " readOnly />
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                            <div className="col-lg-12"> 
+                                                <div className="input-group d-flex align-items-center">
+                                                    <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                        <span >Địa điểm: </span>
+                                                    </div>
+                                                    <textarea className="form-control form-control-sm" rows="2" defaultValue="xã Ea Wer, xã Tân Hòa, huyện Buôn Đôn, tỉnh Đăk Lăk và xã Ea Pô huyện Cư Jút, tỉnh Đăk Nông" readOnly /> 
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div className="row mx-0 col-lg-12 px-0">
+                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Huyện: </span>
+                                                        </div>
+                                                        <input className="form-control form-control-sm" value=" Huyện  " readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Xã: </div>
-                                                <div className="col-lg-8">Xã ABC </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Xã: </span>
+                                                        </div>
+                                                        <input className="form-control form-control-sm" value=" Xã " readOnly />
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row mx-0 col-lg-12 px-0">
+                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Mục đích sử dụng: </span>
+                                                        </div>
+                                                        <textarea className="form-control form-control-sm" rows="1" defaultValue="phát điện" readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Mục đích sử dụng: </div>
-                                                <div className="col-lg-8">phát điện </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Nguồn nước KTSD: </span>
+                                                        </div>
+                                                        <textarea className="form-control form-control-sm" rows="1" defaultValue="sông Srê Pốk" readOnly />
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row mx-0 col-lg-12 px-0">
+                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Thuộc sông: </span>
+                                                        </div>
+                                                        <textarea className="form-control form-control-sm" rows="1" defaultValue="sông Srê Pốk" readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Nguồn nước KTSD: </div>
-                                                <div className="col-lg-8"> sông Srê Pốk  </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Thuộc lưu vực sông: </span>
+                                                        </div>
+                                                        <textarea className="form-control form-control-sm" rows="1" defaultValue="sông Srê Pốk" readOnly />
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row mx-0 col-lg-12 px-0">
+                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Chế độ khai thác: </span>
+                                                        </div>
+                                                        <textarea className="form-control form-control-sm" rows="1" defaultValue="Chế độ khai thác" readOnly  />
+                                                    </div> 
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Thuộc sông: </div>
-                                                <div className="col-lg-8">sông Srê Pốk </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Lượng nước khai thác, sử dụng: </span>
+                                                        </div>
+                                                        <input className="form-control form-control-sm" value="200(m3/s)" readOnly  />
+                                                    </div> 
+                                                </div>
                                             </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Thuộc lưu vực sông: </div>
-                                                <div className="col-lg-8">Mê công</div>
+                                        </div>
+                                        <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                            <div className="col-lg-12"> 
+                                                <div className="input-group d-flex align-items-center">
+                                                    <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                        <span >Phương thức khai thác: </span>
+                                                    </div>
+                                                    <textarea className="form-control form-control-sm" defaultValue="Bằng công trình với các thông số như trong hồ sơ thiết kế đã được cấp có thẩm quyền phê duyệt nộp kèm theo Đề án khai thác, sử dụng nước." rows="2" readOnly />
+                                                </div> 
                                             </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Chế độ khai thác: </div>
-                                                <div className="col-lg-12">Nguyễn Văn A </div>
+                                        </div>
+                                        <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                            <div className="col-lg-12"> 
+                                                <div className="input-group d-flex align-items-center">
+                                                    <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                        <span >Năm sử dụng: </span>
+                                                    </div>
+                                                    <input className="form-control form-control-sm" value="20/02/2020" readOnly />
+                                                </div> 
                                             </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Lượng nước khai thác, sử dụng: </div>
-                                                <div className="col-lg-12">20/02/2020 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Phương thức khai thác: </div>
-                                                <div className="col-lg-12">Bằng công trình với các thông số như trong hồ sơ thiết kế đã được cấp có thẩm quyền phê duyệt nộp kèm theo Đề án khai thác, sử dụng nước. </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Năm sử dụng: </div>
-                                                <div className="col-lg-12">20/02/2020 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Ghi chú: </div>
-                                                <div className="col-lg-12">Nội dung ghi chú </div>
+                                        </div>
+                                        <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                            <div className="col-lg-12"> 
+                                                <div className="input-group d-flex align-items-center">
+                                                    <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                        <span >Ghi chú: </span>
+                                                    </div>
+                                                    <textarea className="form-control form-control-sm" rows="2" defaultValue="Nội dung ghi chú" readOnly  />
+                                                </div> 
                                             </div>
                                         </div>
                                     </div>

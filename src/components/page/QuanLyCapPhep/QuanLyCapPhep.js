@@ -156,7 +156,7 @@ export default class QuanLyCapPhep extends React.Component {
                         <div className="row m-0">
                             <div className="col-lg-12 p-0">
                                 <ul className="nav flex-column nav-pills pl-2 pb-1 mx-auto my-3 rounded">
-                                    <div className="">
+                                    <div >
                                         <p className="btn btn-outline-dark col-11 font-13 btn-sm d-flex justify-content-center align-items-center font-weight-bold"> <InfoCircleOutlined className="mx-1" /> GIỚI THIỆU CHUNG</p>
                                         <p className="exploit-surfacewater-title mb-2 p-2 font-weight-bold text-left">KHAI THÁC SD NƯỚC MẶT</p>
                                         <li className="nav-item">

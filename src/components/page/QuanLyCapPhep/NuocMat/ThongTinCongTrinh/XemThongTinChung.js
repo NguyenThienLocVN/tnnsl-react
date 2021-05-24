@@ -94,120 +94,288 @@ export default class QuanLyCapPhepNuocMatXemThongTinThuyDien extends React.Compo
                                     <TabPane tab="Thông tin chung" key="1">
                                         <div className="row mx-0 col-lg-12 px-0 infomation_table pb-5">
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Tổ chức/Cá nhân được cấp phép: </div>
-                                                <div className="col-lg-12">Organition Name </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold col-md-4 px-0">
+                                                            <span >Tổ chức/Cá nhân được cấp phép:</span>
+                                                        </div>
+                                                        <input type="text" className="form-control form-control-sm" placeholder="Organition Name" aria-label="Organition Name" readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Đ/C tổ chức/cá nhân được cấp phép: </div>
-                                                <div className="col-lg-12">Organition Adress </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold col-md-4 px-0">
+                                                            <span >Đ/C tổ chức/cá nhân được cấp phép:</span>
+                                                        </div>
+                                                        <input type="text" className="form-control form-control-sm" placeholder="Organition Adress" aria-label="Organition Adress" readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Số giấy phép: </div>
-                                                <div className="col-lg-8"> Licence Number </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Tên văn bản: </div>
-                                                <div className="col-lg-8">Licence Name </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Cơ quan cấp phép: </div>
-                                                <div className="col-lg-12">Licensing authorities </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Loại hình giấy phép: </div>
-                                                <div className="col-lg-8">Licence Type </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Thời hạn giấy phép: </div>
-                                                <div className="col-lg-8"> 12/12/2022 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Số giấy phép cũ: </div>
-                                                <div className="col-lg-8">Old Licence Number </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Ngày cấp phép  cũ: </div>
-                                                <div className="col-lg-8">01/01/2010 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold"> Nội dung cấp lại </div>
-                                                <div className="col-lg-12">Re-issued content </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Người ký: </div>
-                                                <div className="col-lg-8">Nguyễn Văn A </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Ngày ký: </div>
-                                                <div className="col-lg-8">20/02/2020 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Có hiệu lực từ: </div>
-                                                <div className="col-lg-8">20/02/2020 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Hiệu lực đến: </div>
-                                                <div className="col-lg-8">20/02/2020 </div>
+                                            <div className="row mx-0 col-lg-12 px-0">
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Số giấy phép:</span>
+                                                            </div>
+                                                            <input type="text" className="form-control form-control-sm" placeholder="Licence Number" aria-label="Licence Number" readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Tên văn bản:</span>
+                                                            </div>
+                                                            <input type="text" className="form-control form-control-sm" placeholder="Licence Name" aria-label="Licence Name" readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Nơi nhận: </div>
-                                                <div className="col-lg-12">Sở TNMT </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold col-md-4 px-0">
+                                                            <span >Cơ quan cấp phép:</span>
+                                                        </div>
+                                                        <input type="text" className="form-control form-control-sm" placeholder="Licensing authorities" aria-label="Licensing authorities" readOnly />
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div className="row mx-0 col-lg-12 px-0">
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Loại hình giấy phép:</span>
+                                                            </div>
+                                                            <input type="text" className="form-control form-control-sm" placeholder="Licence Type" aria-label="Licence Type" readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Thời hạn giấy phép:</span>
+                                                            </div>
+                                                            <input type="date" value=" 20-02-2020" className="form-control form-control-sm"  readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row mx-0 col-lg-12 px-0">
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Số giấy phép cũ:</span>
+                                                            </div>
+                                                            <input type="text" className="form-control form-control-sm" placeholder="Old Licence Number" aria-label="Old Licence Number" readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Ngày cấp phép  cũ:</span>
+                                                            </div>
+                                                            <input type="date" value=" 20-02-2020" className="form-control form-control-sm"  readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Ghi Chú </div>
-                                                <div className="col-lg-12">20/02/2020 </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                            <span >Nội dung cấp lại:</span>
+                                                        </div>
+                                                        <textarea readOnly className="form-control form-control-sm" rows="3"> Re-issued content </textarea>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div className="row mx-0 col-lg-12 px-0">
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Người ký:</span>
+                                                            </div>
+                                                            <input type="text" className="form-control form-control-sm" placeholder="Nguyễn Văn A" aria-label="Nguyễn Văn A" readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Ngày ký:</span>
+                                                            </div>
+                                                            <input type="date" value=" 20-02-2020" className="form-control form-control-sm"  readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row mx-0 col-lg-12 px-0">
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Có hiệu lực từ:</span>
+                                                            </div>
+                                                            <input type="date" value=" 20-02-2020" className="form-control form-control-sm"  readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold col-md-4 px-0">
+                                                                <span >Hiệu lực đến:</span>
+                                                            </div>
+                                                            <input type="date" value=" 20-02-2020" className="form-control form-control-sm"  readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                            <span >Nơi nhận:</span>
+                                                        </div>
+                                                        <input type="text" className="form-control form-control-sm" placeholder="Sở TNMT" readOnly />
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                            <span >Ghi Chú:</span>
+                                                        </div>
+                                                        <textarea readOnly className="form-control form-control-sm" rows="3"> 20/02/2020 </textarea>
+                                                    </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </TabPane>
                                     <TabPane tab="Thanh tra / Kiểm tra" key="2">
                                         <div className="row mx-0 col-lg-12 px-0 infomation_table pb-5">
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Tên đợt thanh tra: </div>
-                                                <div className="col-lg-12">Inspections Name </div>
+                                            <div class="row mx-0 col-lg-12 px-0">
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                                <span >Tên đợt thanh tra:</span>
+                                                            </div>
+                                                            <textarea readOnly className="form-control form-control-sm" rows="2"> Inspections Name  </textarea>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                                <span >Tên trưởng đoàn: </span>
+                                                            </div>
+                                                            <textarea readOnly className="form-control form-control-sm" rows="2"> Nguyễn Văn A </textarea>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mx-0 col-lg-12 px-0">
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                                <span >Tên đơn vị thực hiện:</span>
+                                                            </div>
+                                                            <textarea readOnly className="form-control form-control-sm" rows="1"> Đoàn Thah Tra ABC  </textarea>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                                    <div className="col-lg-12"> 
+                                                        <div className="input-group d-flex align-items-center">
+                                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                                <span >Năm thực hiện: </span>
+                                                            </div>
+                                                            <input type="date" className="form-control form-control-sm" readOnly />
+                                                        </div> 
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Tên trưởng đoàn: </div>
-                                                <div className="col-lg-12"> Nguyễn Văn A </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Tên đơn vị thực hiện: </div>
-                                                <div className="col-lg-8">Đoàn Thah Tra ABC </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Năm thực hiện: </div>
-                                                <div className="col-lg-8">2020 </div>
-                                            </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Ghi chú: </div>
-                                                <div className="col-lg-12">nội dung ghi chú </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                            <span >Ghi chú: </span>
+                                                        </div>
+                                                        <textarea readOnly className="form-control form-control-sm" rows="2"> nội dung ghi chú </textarea>
+                                                    </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </TabPane>
                                     <TabPane tab="Tiền cấp quyền KTSD" key="3">
-                                        <div className="row mx-0 col-lg-12 px-0 infomation_table pb-5">
+                                        <div class="row mx-0 col-lg-12 px-0">
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Quyết định số: </div>
-                                                <div className="col-lg-8">AB123D </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Quyết định số:</span>
+                                                        </div>
+                                                        <input className="form-control form-control-sm" value=" AB123D " readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
                                             <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                                <div className="col-lg-4 font-weight-bold">Tổng Tiền: </div>
-                                                <div className="col-lg-8"> 11,511,353,700 </div>
+                                                <div className="col-lg-12"> 
+                                                    <div className="input-group d-flex align-items-center">
+                                                        <div className="font-weight-bold px-0 col-md-4 px-0">
+                                                            <span >Tổng Tiền: </span>
+                                                        </div>
+                                                        <input className="form-control form-control-sm" value=" 11,511,353,700 " readOnly />
+                                                    </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </TabPane>
                                     <TabPane tab="Theo dõi quá trình sau GP" key="4">
-                                        <div className="row mx-0 col-lg-12 px-0 infomation_table pb-5">
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Ngày tháng: </div>
-                                                <div className="col-lg-12"> Không có dữ liệu... </div>
+                                        <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                            <div className="col-lg-12"> 
+                                                <div className="input-group d-flex align-items-center">
+                                                    <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                        <span >Ngày tháng: </span>
+                                                    </div>
+                                                    <textarea readOnly className="form-control form-control-sm" rows="1"> Không có dữ liệu... </textarea>
+                                                </div> 
                                             </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Văn bản: </div>
-                                                <div className="col-lg-12"> Không có dữ liệu... </div>
+                                        </div>
+                                        <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                            <div className="col-lg-12"> 
+                                                <div className="input-group d-flex align-items-center">
+                                                    <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                        <span >Văn bản: </span>
+                                                    </div>
+                                                    <textarea readOnly className="form-control form-control-sm" rows="1"> Không có dữ liệu... </textarea>
+                                                </div> 
                                             </div>
-                                            <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                                <div className="col-lg-12 font-weight-bold">Nội Dung: </div>
-                                                <div className="col-lg-12">Không có dữ liệu... </div>
+                                        </div>
+                                        <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                            <div className="col-lg-12"> 
+                                                <div className="input-group d-flex align-items-center">
+                                                    <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                        <span >Nội Dung:  </span>
+                                                    </div>
+                                                    <textarea readOnly className="form-control form-control-sm" rows="1"> Không có dữ liệu...  </textarea>
+                                                </div> 
                                             </div>
                                         </div>
                                     </TabPane>
