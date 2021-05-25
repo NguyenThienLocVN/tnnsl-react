@@ -204,96 +204,101 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                         </div> 
                                     </div>
                                 </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Q lớn nhất qua NM(m3/s): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
+                                <>
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Q lớn nhất qua NM(m3/s): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Q xả TT NM(m3/s):</span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200  " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Q xả TT NM(m3/s):</span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200  " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Dung tích hữu ích(triệu m3): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Dung tích hữu ích(triệu m3): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
+                                    </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Dung tích toàn bộ (triệu m3):</span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200  " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div> 
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Dung tích toàn bộ (triệu m3):</span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200  " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Dung tích chết (triệu m3): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Dung tích chết (triệu m3): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Mực nước chết(m):</span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200  " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Mực nước chết(m):</span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200  " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Mực nước dâng BT: </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Mực nước dâng BT: </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Mực nước cao nhất TL(m):</span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200  " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Mực nước cao nhất TL(m):</span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200  " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Mực nước đón lũ(m): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Mực nước đón lũ(m): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
-                                    </div>
-                                </div>
+                                    </>
+                                }
+                                
                             </div>
                             <div className="row mx-0 mb-3">
                                 <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight font-weight-bold text-left">LƯU LƯỢNG THEO MỤC ĐÍCH KTSD</p>
@@ -307,46 +312,63 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                         </div> 
                                     </div>
                                 </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Cấp nước nông nghiệp(m3/s): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                {(this.state.pagename === "tram-bom") &&
+                                <>
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Cấp nước(m3/s): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Phát điện(m3/s): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                </>}
+                                {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
+                                <>
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Cấp nước nông nghiệp(m3/s): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Cấp  nước nông nghiệp(m3/s): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Phát điện(m3/s): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
-                                    <div className="col-lg-12"> 
-                                        <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-8 px-0">
-                                                <span >Cấp nước sinh hoạt(m3/s): </span>
-                                            </div>
-                                            <input className="form-control form-control-sm" value=" 200 " readOnly />
-                                        </div> 
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Cấp  nước nông nghiệp(m3/s): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
+                                    <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                        <div className="col-lg-12"> 
+                                            <div className="input-group d-flex align-items-center">
+                                                <div className="font-weight-bold px-0 col-md-8 px-0">
+                                                    <span >Cấp nước sinh hoạt(m3/s): </span>
+                                                </div>
+                                                <input className="form-control form-control-sm" value=" 200 " readOnly />
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </>}
+                                
                             </div>
                             <div className="row mx-0 mb-3">
                                 <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight font-weight-bold text-left">HẠNG MỤC CÔNG TRÌNH</p>
@@ -360,36 +382,55 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
+                                        <>
+                                            <tr>
+                                                <th>Tuyến đập</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Cửa lấy nước</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Nhà máy thủy điện</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Cửa xả sau nhà máy</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Công trình xả tối thiểu</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                            </tr>
+                                        </>
+                                    }
+                                    {(this.state.pagename === "tram-bom") &&
+                                    <>
                                         <tr>
-                                            <th>Tuyến đập</th>
+                                            <th>Trạm bơm</th>
                                             <td></td>
                                             <td></td>
                                             <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                         <tr>
-                                            <th>Cửa lấy nước</th>
+                                            <th>Họng bơm</th>
                                             <td></td>
                                             <td></td>
                                             <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
-                                        <tr>
-                                            <th>Nhà máy thủy điện</th>
-                                            <td></td>
-                                            <td></td>
-                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Cửa xả sau nhà máy</th>
-                                            <td></td>
-                                            <td></td>
-                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Công trình xả tối thiểu</th>
-                                            <td></td>
-                                            <td></td>
-                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
-                                        </tr>
+                                    </>}
                                     </tbody>
                                 </table>
                             </div>
