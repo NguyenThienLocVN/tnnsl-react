@@ -385,50 +385,50 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                     {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
                                         <>
                                             <tr>
-                                                <th>Tuyến đập</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                                <th className="py-1">Tuyến đập</th>
+                                                <td className="py-1"></td>
+                                                <td className="py-1"></td>
+                                                <td className="text-center py-1"> <button type="button" className="font-12 mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                             </tr>
                                             <tr>
-                                                <th>Cửa lấy nước</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                                <th className="py-1">Cửa lấy nước</th>
+                                                <td className="py-1"></td>
+                                                <td className="py-1"></td>
+                                                <td className="text-center py-1"> <button type="button" className="font-12 mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                             </tr>
                                             <tr>
-                                                <th>Nhà máy thủy điện</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                                <th className="py-1">Nhà máy thủy điện</th>
+                                                <td className="py-1"></td>
+                                                <td className="py-1"></td>
+                                                <td className="text-center py-1"> <button type="button" className="font-12 mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                             </tr>
                                             <tr>
-                                                <th>Cửa xả sau nhà máy</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                                <th className="py-1">Cửa xả sau nhà máy</th>
+                                                <td className="py-1"></td>
+                                                <td className="py-1"></td>
+                                                <td className="text-center py-1"> <button type="button" className="font-12 mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                             </tr>
                                             <tr>
-                                                <th>Công trình xả tối thiểu</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                                <th className="py-1">Công trình xả tối thiểu</th>
+                                                <td className="py-1"></td>
+                                                <td className="py-1"></td>
+                                                <td className="text-center py-1"> <button type="button" className="font-12 mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                             </tr>
                                         </>
                                     }
                                     {(this.state.pagename === "tram-bom") &&
                                     <>
                                         <tr>
-                                            <th>Trạm bơm</th>
-                                            <td></td>
-                                            <td></td>
-                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                            <th className="py-1">Trạm bơm</th>
+                                            <td className="py-1"></td>
+                                            <td className="py-1"></td>
+                                            <td className="text-center py-1"> <button type="button" className="font-12 mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                         <tr>
-                                            <th>Họng bơm</th>
-                                            <td></td>
-                                            <td></td>
-                                            <td className="text-center"> <button type="button" className=" mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
+                                            <th className="py-1">Họng bơm</th>
+                                            <td className="py-1"></td>
+                                            <td className="py-1"></td>
+                                            <td className="text-center py-1"> <button type="button" className="font-12 mx-auto d-flex align-items-center btn btn-outline-success btn-sm"> <FileImageOutlined className="mx-1" /> XEM</button> </td>
                                         </tr>
                                     </>}
                                     </tbody>
