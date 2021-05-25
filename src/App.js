@@ -9,7 +9,7 @@ import QuanLyCapPhep from './components/page/QuanLyCapPhep/QuanLyCapPhep';
 // Quanly cap phep / cong trinh
 import QuanLyCapPhepNuocMatTongQuanCongTrinh from './components/page/QuanLyCapPhep/NuocMat/TongQuanCongTrinh';
 import QuanLyCapPhepTaoGiayPhepNuocMat from './components/page/QuanLyCapPhep/NuocMat/TaoMoiGiayPhep';
-import QuanLyCapPhepNuocMatXemThongTinThuyDien from './components/page/QuanLyCapPhep/NuocMat/ThongTinCongTrinh/XemThongTinChung';
+import QuanLyCapPhepNuocMatXemThongTinChung from './components/page/QuanLyCapPhep/NuocMat/ThongTinCongTrinh/XemThongTinChung';
 import QuanLyCapPhepNuocMatXemThongTinCongTrinh from './components/page/QuanLyCapPhep/NuocMat/ThongTinCongTrinh/ThongTinCongTrinh';
 import QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet from './components/page/QuanLyCapPhep/NuocMat/ThongTinCongTrinh/ThongTinCongTrinhChiTiet';
 import QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung from './components/page/QuanLyCapPhep/NuocMat/ThongTinCongTrinh/GiamSatKhaiThacSuDung';
@@ -43,7 +43,7 @@ function App() {
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat/:pagename" component={QuanLyCapPhepNuocMatTongQuanCongTrinh} />				
 
 				{/* Xem Thong Tin GP */}
-				<Route exact path="/quan-ly-cap-phep/nuoc-mat/:pagename/xem-thong-tin-chung" component={QuanLyCapPhepNuocMatXemThongTinThuyDien} />
+				<Route exact path="/quan-ly-cap-phep/nuoc-mat/:pagename/xem-thong-tin-chung" component={QuanLyCapPhepNuocMatXemThongTinChung} />
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat/:pagename/xem-thong-tin-cong-trinh" component={QuanLyCapPhepNuocMatXemThongTinCongTrinh} />
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat/:pagename/xem-thong-tin-cong-trinh/chi-tiet" component={QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet} />
 				<Route exact path="/quan-ly-cap-phep/nuoc-mat/:pagename/giam-sat-khai-thac-su-dung" component={QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung} />

@@ -76,7 +76,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                 <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
                                     <div className="col-lg-12"> 
                                         <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-5 px-0">
+                                            <div className="font-weight-bold px-0 col-md-5   px-0">
                                                 <span >Tên công trình:</span>
                                             </div>
                                             <input className="form-control form-control-sm" value=" Thủy Điện  " readOnly />
@@ -86,7 +86,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                 <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
                                     <div className="col-lg-12"> 
                                         <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-5 px-0">
+                                            <div className="font-weight-bold px-0 col-md-5   px-0">
                                                 <span >Ký hiệu công trình:</span>
                                             </div>
                                             <input className="form-control form-control-sm" value=" Thủy Điện  " readOnly />

@@ -19,6 +19,10 @@
     height: 85px;
 }
 
+.form-control:disabled, .form-control[readonly]{
+    background-color: transparent !important;
+}
+
 .bg-lightgray { background-color: #fbfafa !important; }
 .bg-goldenyellow { background-color: lightgoldenrodyellow !important }
 .bg-lightred { background-color: #f3baba !important }

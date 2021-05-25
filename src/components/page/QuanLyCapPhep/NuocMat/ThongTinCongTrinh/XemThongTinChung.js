@@ -7,7 +7,7 @@ import { FolderViewOutlined } from '@ant-design/icons';
 
 const TabPane = Tabs.TabPane;
 
-export default class QuanLyCapPhepNuocMatXemThongTinThuyDien extends React.Component {
+export default class QuanLyCapPhepNuocMatXemThongTinChung extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
