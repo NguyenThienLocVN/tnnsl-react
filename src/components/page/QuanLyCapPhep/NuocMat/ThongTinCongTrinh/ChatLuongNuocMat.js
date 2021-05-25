@@ -88,19 +88,19 @@ export default class QuanLyCapPhepNuocMatChatLuongNuocMat extends React.Componen
                                     <div className="row mx-0 mb-3">
                                         <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Tên công trình:</div>
-                                            <div className="col-6 px-0 text-13">Thủy điện</div>
+                                            <input type="text" className="form-control form-control-sm col-6" value="Thuy Dien" readOnly />
                                         </div>
                                         <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Ký hiệu công trình:</div>
-                                            <div className="col-6 px-0 text-13">TD 01</div>
+                                            <input type="text" className="form-control form-control-sm col-6" value="Thuy Dien" readOnly />
                                         </div>
                                         <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Ngày lấy mẫu:</div>
-                                            <div className="col-6 px-0 text-13"> 20/01/2020 </div>
+                                            <input type="text" className="form-control form-control-sm col-6" value="Thuy Dien" readOnly />
                                         </div>
                                         <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                             <div className="col-6 px-0 font-weight-bold text-13">Địa điểm lấy mẫu:</div>
-                                            <div className="col-6 px-0 text-13">Nhà máy thủy điện 1</div>
+                                            <input type="text" className="form-control form-control-sm col-6" value="Thuy Dien" readOnly />
                                         </div>
                                     </div>
                                     <p className="exploit-surfacewater-title mb-0 p-2 font-weight font-weight-bold text-left">Chất lượng nước mặt theo QCVN 08-MT:2015-BTNMMT</p>

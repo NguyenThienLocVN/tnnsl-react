@@ -223,7 +223,7 @@ export default class QuanLyCapPhepNuocMatXemThongTinCongTrinh extends React.Comp
                                             </div>
                                         </div>
                                         <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
-                                            <div className="col-lg-12"> 
+                                            <div className="col-lg-6"> 
                                                 <div className="input-group d-flex align-items-center">
                                                     <div className="font-weight-bold px-0 col-md-4 px-0">
                                                         <span >Năm sử dụng: </span>

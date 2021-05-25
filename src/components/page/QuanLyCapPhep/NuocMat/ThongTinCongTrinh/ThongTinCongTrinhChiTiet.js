@@ -76,7 +76,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                 <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
                                     <div className="col-lg-12"> 
                                         <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-5   px-0">
+                                            <div className="font-weight-bold px-0 col-md-5 px-0">
                                                 <span >Tên công trình:</span>
                                             </div>
                                             <input className="form-control form-control-sm" value=" Thủy Điện  " readOnly />
@@ -86,52 +86,112 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                 <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
                                     <div className="col-lg-12"> 
                                         <div className="input-group d-flex align-items-center">
-                                            <div className="font-weight-bold px-0 col-md-5   px-0">
+                                            <div className="font-weight-bold px-0 col-md-5 px-0">
                                                 <span >Ký hiệu công trình:</span>
                                             </div>
                                             <input className="form-control form-control-sm" value=" Thủy Điện  " readOnly />
                                         </div> 
                                     </div>
                                 </div>
-                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-12 px-0 font-weight-bold text-13">Chế độ khai thác:</div>
-                                    <div className="col-12 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Chế độ khai thác:</span>
+                                            </div>
+                                            <textarea rows="1" className="form-control form-control-sm" defaultValue=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-12 px-0 font-weight-bold text-13">Phương thức khai thác:</div>
-                                    <div className="col-12 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Phương thức khai thác:</span>
+                                            </div>
+                                            <textarea rows="1" className="form-control form-control-sm" defaultValue=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-12 px-0 font-weight-bold text-13">Địa điểm:</div>
-                                    <div className="col-12 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Địa điểm:</span>
+                                            </div>
+                                            <textarea rows="1" className="form-control form-control-sm" defaultValue=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-6 px-0 font-weight-bold text-13">Huyện:</div>
-                                    <div className="col-6 px-0 text-13">Tên Huyện</div>
+                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-5 px-0">
+                                                <span >Huyện:</span>
+                                            </div>
+                                            <input className="form-control form-control-sm" value=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-6 px-0 font-weight-bold text-13">Xã:</div>
-                                    <div className="col-6 px-0 text-13">Tên Xã</div>
+                                <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-5 px-0">
+                                                <span >Xã:</span>
+                                            </div>
+                                            <input className="form-control form-control-sm" value=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-12 px-0 font-weight-bold text-13">Nguồn nước khai thác:</div>
-                                    <div className="col-12 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Nguồn nước khai thác:</span>
+                                            </div>
+                                            <textarea rows="1" className="form-control form-control-sm" defaultValue=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-12 px-0 font-weight-bold text-13">Mục đích sử dụng:</div>
-                                    <div className="col-12 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Mục đích sử dụng:</span>
+                                            </div>
+                                            <textarea rows="1" className="form-control form-control-sm" defaultValue=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-6 px-0 font-weight-bold text-13">Thuộc sông:</div>
-                                    <div className="col-6 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Thuộc sông:</span>
+                                            </div>
+                                            <textarea rows="1" className="form-control form-control-sm" defaultValue=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-6 px-0 font-weight-bold text-13">Thuộc lưu vực sông:</div>
-                                    <div className="col-6 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Thuộc lưu vực sông:</span>
+                                            </div>
+                                            <textarea rows="1" className="form-control form-control-sm" defaultValue=" Thủy Điện  " readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                    <div className="col-12 px-0 font-weight-bold text-13">Năm vận hành:</div>
-                                    <div className="col-12 px-0 text-13">Thủy Điện</div>
+                                <div className="row mx-0 py-2 col-lg-12 border-bottom px-0">
+                                    <div className="col-lg-12"> 
+                                        <div className="input-group d-flex align-items-center">
+                                            <div className="font-weight-bold px-0 col-md-12 px-0">
+                                                <span >Năm vận hành:</span>
+                                            </div>
+                                            <input type="date" className="form-control form-control-sm" value="2020-01-01" readOnly />
+                                        </div> 
+                                    </div>
                                 </div>
                                 <hr />
                                 <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">

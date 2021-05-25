@@ -102,7 +102,18 @@ export default class QuanLyCapPhepNuocMatTongQuanCongTrinh extends React.Compone
                   thoi_han: 10,
                   trang_thai: ['2'],
                   thao_tac: <div><Link title="Xem GP" to={this.xemThongTinChung}><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
-                }
+                },
+                {
+                    id: '3',
+                    so_giay_phep: <p title="Xem file giấy phép" className="text-primary m-0">773/GP-BTNMT &nbsp; <FileOutlined /> </p>,
+                    ngay_ky: '04/05/2021',
+                    ten_cong_trinh: <p title="Xem bản đồ" className="text-primary m-0">Thủy điện Nậm Pia <img  src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/earth.png'} alt="earth" className="table-icon" /></p>,
+                    ten_to_chuc: 'Công ty B',
+                    ngay_hieu_luc: '11/05/2021',
+                    thoi_han: 10,
+                    trang_thai: ['3'],
+                    thao_tac: <div><Link title="Xem GP" to={this.xemThongTinChung}><EyeOutlined /></Link>&nbsp; &nbsp;<Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" title="Sửa"><EditOutlined /></Link>&nbsp; &nbsp;<span title="Xóa" className="text-danger"><DeleteOutlined /></span></div>
+                  }
             ]
         }
     }
@@ -261,7 +272,7 @@ export default class QuanLyCapPhepNuocMatTongQuanCongTrinh extends React.Compone
                                     </div>
                                     <button className="col-1 btn btn-info d-flex align-items-center justify-content-center font-13">Tìm &nbsp;<SearchOutlined /></button>
                                 </div>
-                                <Table columns={this.state.columns} bordered pagination={{ position: 'bottomLeft' }} dataSource={this.state.data}  />
+                                <Table className="table-data-license" columns={this.state.columns} bordered pagination={{ position: 'bottomLeft' }} dataSource={this.state.data}  />
                             </div>
                         </div>
                     </div>
