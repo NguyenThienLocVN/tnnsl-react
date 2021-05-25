@@ -185,7 +185,7 @@ export default class QuanLyCapPhepNuocMatTongQuanCongTrinh extends React.Compone
                         <div className="col-12 px-0">
                             
                             <div className="col-10 py-2 m-auto d-flex justify-content-center text-center">
-                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH_THUY_DIEN/dam.png'} className="p-0 hydroelectric-icon rounded-circle border border-secondary my-auto mx-3" alt="dap-thuy-dien" />
+                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/dam.png'} className="p-0 hydroelectric-icon rounded-circle border border-secondary my-auto mx-3" alt="dap-thuy-dien" />
                                 <div className="col-7 text-left p-0">
                                     <p className="font-30 m-0 font-weight-bold">60</p>
                                     <p className="font-weight-bold mb-1">Tổng số công trình</p>
@@ -197,42 +197,42 @@ export default class QuanLyCapPhepNuocMatTongQuanCongTrinh extends React.Compone
                                     <p className="font-weight-bold m-0">Tổng số CT đã vận hành</p>
                                     <p className="font-18 m-0 font-weight-bold text-danger">28 / 60</p>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH_THUY_DIEN/factory.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="dap-thuy-dien" />
+                                <img src={process.env.PUBLIC_URL + this.iconConstruction} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="dap-thuy-dien" />
                             </div>
                             <div className="col-12 py-1 d-flex justify-content-center text-center border-bottom">
                                 <div className="col-9 text-left p-0">
                                     <p className="font-weight-bold m-0">Giấy phép đã cấp</p>
                                     <p className="font-18 m-0 font-weight-bold text-danger">11 / 60</p>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH_THUY_DIEN/licensing.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="giay-phep" />
+                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/licensing.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="giay-phep" />
                             </div>
                             <div className="col-12 py-1 d-flex justify-content-center text-center border-bottom">
                                 <div className="col-9 text-left p-0">
                                     <p className="font-weight-bold m-0">Giấy phép sắp hết hiệu lực</p>
                                     <p className="font-18 m-0 font-weight-bold text-danger">06 / 60</p>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH_THUY_DIEN/licensing-2.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="giay-phep-2" />
+                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/licensing-2.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="giay-phep-2" />
                             </div>
                             <div className="col-12 py-1 d-flex justify-content-center text-center border-bottom">
                                 <div className="col-9 text-left p-0">
                                     <p className="font-weight-bold m-0">Giấy phép hết hiệu lực</p>
                                     <p className="font-18 m-0 font-weight-bold text-danger">03 / 60</p>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH_THUY_DIEN/licensing-3.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="giay-phep-3" />
+                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/licensing-3.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="giay-phep-3" />
                             </div>
                             <div className="col-12 py-1 d-flex justify-content-center text-center border-bottom">
                                 <div className="col-9 text-left p-0">
                                     <p className="font-weight-bold m-0">Giấy phép chưa phê duyệt</p>
                                     <p className="font-18 m-0 font-weight-bold text-danger">10 / 60</p>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH_THUY_DIEN/report.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="chua-duyet" />
+                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/report.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="chua-duyet" />
                             </div>
                             <div className="col-12 py-1 d-flex justify-content-center text-center border-bottom">
                                 <div className="col-9 text-left p-0">
                                     <p className="font-weight-bold m-0">Chưa có giấy phép thay thế</p>
                                     <p className="font-18 m-0 font-weight-bold text-danger">02 / 60</p>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH_THUY_DIEN/expire.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="het-han" />
+                                <img src={process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/expire.png'} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="het-han" />
                             </div>
 
                             <Link to="/quan-ly-cap-phep/nuoc-mat/tao-moi" className="col-11 btn btn-primary d-flex align-items-center mx-auto mt-3"><PlusOutlined /> &nbsp; Tạo mới giấy phép</Link>
