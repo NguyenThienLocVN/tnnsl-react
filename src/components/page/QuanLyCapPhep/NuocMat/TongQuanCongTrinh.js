@@ -176,6 +176,33 @@ export default class QuanLyCapPhepNuocMatTongQuanCongTrinh extends React.Compone
         return "/quan-ly-cap-phep/nuoc-mat/"+this.state.pagename+"/xem-thong-tin-chung";
     }
 
+    imageConstruction = () => {
+        if(this.state.pagename === "thuy-dien"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/thuydien.png';
+        }
+        else if(this.state.pagename === "ho-chua"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/hochua.png';
+        }
+        else if(this.state.pagename === "tram-bom"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/trambom.jpg';
+        }
+        else if(this.state.pagename === "he-thong-thuy-loi"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/dapthuyloi.jpg';
+        }
+        else if(this.state.pagename === "cong"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/cong.jpg';
+        }
+        else if(this.state.pagename === "tram-cap-nuoc"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/tramcapnuoc.jpg';
+        }
+        else if(this.state.pagename === "nha-may-nuoc"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/nhamaynuoc.jpg';
+        }
+        else if(this.state.pagename === "cong-trinh-khac"){
+            return process.env.PUBLIC_URL + '/images/QUAN_LY_CAP_PHEP/CONG_TRINH/trambom.jpg';
+        }
+    }
+
     render(){
         return(
 			<div className="p-0">
@@ -197,7 +224,7 @@ export default class QuanLyCapPhepNuocMatTongQuanCongTrinh extends React.Compone
                                     <p className="font-weight-bold m-0">Tổng số CT đã vận hành</p>
                                     <p className="font-18 m-0 font-weight-bold text-danger">28 / 60</p>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + this.iconConstruction} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="dap-thuy-dien" />
+                                <img src={this.imageConstruction()} className="p-0 hydroelectric-sub-icon border-secondary my-auto mx-3" alt="dap-thuy-dien" />
                             </div>
                             <div className="col-12 py-1 d-flex justify-content-center text-center border-bottom">
                                 <div className="col-9 text-left p-0">
