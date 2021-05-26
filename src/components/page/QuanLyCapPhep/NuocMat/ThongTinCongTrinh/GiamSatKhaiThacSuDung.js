@@ -350,30 +350,30 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                 <div className="col-6 px-0 font-weight-bold text-13">Xã:</div>
                                                 <input type="text" className="form-control form-control-sm" value="Thuy Dien" readOnly />
                                             </div>
-                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
+                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") ?
                                             <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                                 <div className="col-10 px-0 font-weight-bold text-13">Q lớn nhất qua NM (m3/s):</div>
                                                 <input type="text" className="form-control form-control-sm col-2" value="4000" readOnly />
-                                            </div>}
-                                            {(this.state.pagename === "tram-bom") &&
+                                            </div> : ''}
+                                            {(this.state.pagename !== "thuy-dien" & this.state.pagename !== "ho-chua") ?
                                             <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                                 <div className="col-10 px-0 font-weight-bold text-13">Công suất máy bơm(m3/s):</div>
                                                 <input type="text" className="form-control form-control-sm col-2" value="4000" readOnly />
-                                            </div>}
+                                            </div> : ''}
                                             <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                                 <div className="col-10 px-0 font-weight-bold text-13">Q xả tối thiểu (m3/s):</div>
                                                 <input type="text" className="form-control form-control-sm col-2" value="4000" readOnly />
                                             </div>
-                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
+                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") ?
                                             <div className="row col-lg-6 mx-0 border-bottom align-items-center py-1">
                                                 <div className="col-10 px-0 font-weight-bold text-13">Công suất lắp máy MW:</div>
                                                 <input type="text" className="form-control form-control-sm col-2" value="4000" readOnly />
-                                            </div>}
+                                            </div> : ''}
                                         </div>
                                         <div className="row mx-0 mb-3">
                                             <p className="exploit-surfacewater-title col-12 mb-0 p-2 font-weight-bold text-left">Giám sát KTSD theo thông tư 47/2017/TT-BTNMT</p>
                                             {/* Ho Chua & Thuy Dien */}
-                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") &&
+                                            {(this.state.pagename === "thuy-dien" || this.state.pagename === "ho-chua") ?
                                             <div id="thuy-dien-ho-chua">
                                                 <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Thông số giám sát</p>
                                                     <div className="row mx-0">
@@ -518,10 +518,11 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                             </div>
                                                         </div>
                                                     </div>
-                                            </div>}
-                                            {/* end Ho Chua & Thuy Dien */}
-                                            {/* Tram Bom */}
-                                            {(this.state.pagename === "tram-bom") &&
+                                            </div>
+                                            // {/* end Ho Chua & Thuy Dien */}
+                                            : 
+                                            // {/* Tram Bom & cac ct khac */}
+                                            
                                                 <div id="tram-bom">
                                                     <p className="font-14 col-12 mb-0 font-weight-bold text-danger">Thông số giám sát</p>
                                                     <div className="row mx-0">
@@ -548,12 +549,12 @@ export default class QuanLyCapPhepNuocMatGiamSatKhaiThacSuDung extends React.Com
                                                             <div className="col-sm-2 px-0 row mx-0">
                                                                 <div className="row mx-0 col-sm-12 px-0">
                                                                     <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                                        <div className="col-9 px-0 font-weight-bold text-13">BOD5:</div>
-                                                                        <input type="text" className="form-control form-control-sm col-3" value="40" readOnly />
+                                                                        <div className="col-7 px-0 font-weight-bold text-13">BOD5:</div>
+                                                                        <input type="text" className="form-control form-control-sm col-5" value="40" readOnly />
                                                                     </div>
                                                                     <div className="row col-lg-12 mx-0 border-bottom align-items-center py-1">
-                                                                        <div className="col-9 px-0 font-weight-bold text-13">COD:</div>
-                                                                        <input type="text" className="form-control form-control-sm col-3" value="40" readOnly />
+                                                                        <div className="col-7 px-0 font-weight-bold text-13">COD:</div>
+                                                                        <input type="text" className="form-control form-control-sm col-5" value="40" readOnly />
                                                                     </div>
                                                                 </div>
                                                             </div>

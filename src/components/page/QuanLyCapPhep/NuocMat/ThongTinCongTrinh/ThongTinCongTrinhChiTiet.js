@@ -312,7 +312,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                         </div> 
                                     </div>
                                 </div>
-                                {(this.state.pagename === "tram-bom") &&
+                                {(this.state.pagename !== "thuy-dien" || this.state.pagename !== "ho-chua") &&
                                 <>
                                     <div className="row mx-0 py-2 col-lg-6 border-bottom px-0">
                                         <div className="col-lg-12"> 
@@ -416,7 +416,7 @@ export default class QuanLyCapPhepNuocMatThongTinCongTrinhChiTiet extends React.
                                             </tr>
                                         </>
                                     }
-                                    {(this.state.pagename === "tram-bom") &&
+                                    {(this.state.pagename !== "thuy-dien" || this.state.pagename !== "ho-chua") &&
                                     <>
                                         <tr>
                                             <th className="py-1">Trạm bơm</th>
